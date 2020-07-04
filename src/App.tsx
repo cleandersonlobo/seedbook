@@ -4,6 +4,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Routes from 'routes';
 import { ThemeProvider } from 'styled-components/native';
 import { light } from './styles/theme';
+import './reactotron';
 
 const App: React.FC = () => {
   return (
