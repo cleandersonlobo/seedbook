@@ -8,6 +8,7 @@ interface Props {
   textSize?: string;
   spacing?: string;
   size?: string;
+  onPress?: () => void;
 }
 
 const Button: React.FC<Props> = ({

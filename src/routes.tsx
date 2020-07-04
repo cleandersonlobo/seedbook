@@ -4,12 +4,13 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from 'screens/Home/Home';
 import CreateProfile from 'screens/CreateProfile/CreateProfile';
 import { transitionSpec } from 'helpers/utils';
+import { gloablStyles } from 'styles';
 
 const MainStack = createStackNavigator();
 
 const RouteStack: React.FC = () => {
   return (
-    <MainStack.Navigator initialRouteName="CreateProfile">
+    <MainStack.Navigator initialRouteName="Home">
       <MainStack.Screen
         name="Home"
         component={Home}
@@ -22,7 +23,11 @@ const RouteStack: React.FC = () => {
         name="CreateProfile"
         component={CreateProfile}
         options={{
-          headerShown: false,
+          headerTintColor: '#000000',
+          headerBackTitleVisible: false,
+          headerTitle: '',
+          headerTransparent: true,
+          headerLeftContainerStyle: gloablStyles.headerLeftContainerStyle,
           transitionSpec,
         }}
       />
