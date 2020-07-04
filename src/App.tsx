@@ -1,20 +1,20 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Routes from 'routes';
 import { ThemeProvider } from 'styled-components/native';
-import { light } from './styles/theme';
+import { SafeProvider } from 'styles';
+import { light } from 'styles/theme';
 import './reactotron';
 
 const App: React.FC = () => {
   return (
-    <SafeAreaProvider>
-      <ThemeProvider theme={light}>
+    <ThemeProvider theme={light}>
+      <SafeProvider>
         <NavigationContainer>
           <Routes />
         </NavigationContainer>
-      </ThemeProvider>
-    </SafeAreaProvider>
+      </SafeProvider>
+    </ThemeProvider>
   );
 };
 

@@ -13,6 +13,7 @@ const RouteStack: React.FC = () => {
         name="Home"
         component={Home}
         options={{
+          headerShown: false,
           transitionSpec,
         }}
       />
