@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable import/no-extraneous-dependencies */
 const { getDefaultConfig } = require('metro-config');
 
 module.exports = (async () => {
