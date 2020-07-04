@@ -11,7 +11,7 @@ interface ColorTypes {
 interface DefaultTheme {
   type: string;
   colors: {
-    [key: string]: ColorTypes | string;
+    [key: string]: string | ColorTypes;
     green: ColorTypes;
     yellow: ColorTypes;
     red: ColorTypes;

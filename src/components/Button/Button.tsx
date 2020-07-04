@@ -5,16 +5,22 @@ interface Props {
   text?: string;
   color?: string;
   textColor?: string;
+  textSize?: string;
+  spacing?: string;
+  size?: string;
 }
 
 const Button: React.FC<Props> = ({
   text = 'Entrar',
   textColor = 'dark',
+  textSize = 'large',
   ...btnProps
 }) => {
   return (
     <TouchOpacity {...btnProps}>
-      <Text color={textColor}>{text}</Text>
+      <Text color={textColor} textSize={textSize}>
+        {text}
+      </Text>
     </TouchOpacity>
   );
 };

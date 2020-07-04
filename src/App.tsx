@@ -9,11 +9,11 @@ import './reactotron';
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={light}>
-      <SafeProvider>
-        <NavigationContainer>
+      <NavigationContainer>
+        <SafeProvider>
           <Routes />
-        </NavigationContainer>
-      </SafeProvider>
+        </SafeProvider>
+      </NavigationContainer>
     </ThemeProvider>
   );
 };

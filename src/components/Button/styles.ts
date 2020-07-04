@@ -4,6 +4,7 @@ interface Props {
   spacing?: string;
   color?: string;
   size?: string;
+  textSize?: string;
 }
 
 export const TouchOpacity = styled.TouchableOpacity<Props>`
@@ -13,14 +14,14 @@ export const TouchOpacity = styled.TouchableOpacity<Props>`
   box-shadow: 0px 2px 1px
     ${props => props.theme.colors[props.color || 'green'].shadow};
   margin: 15px 0px;
-  min-width: 320px;
+  width: ${props => props.size || '100%'};
 `;
 
 export const Text = styled.Text<Props>`
   font-style: normal;
   font-weight: 800;
   color: ${props => props.theme.colors.text[props.color || 'dark']};
-  font-size: ${props => props.theme.fontSize[props.size || 'large']}px;
+  font-size: ${props => props.theme.fontSize[props.textSize || 'large']}px;
   line-height: 26px;
   text-align: center;
 `;

@@ -10,7 +10,7 @@ const spacing = {
 
 const fontSize = {
   large: 24,
-  medium: 28,
+  medium: 18,
   small: 14,
   tiny: 12,
 };
