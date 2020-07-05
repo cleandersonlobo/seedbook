@@ -9,3 +9,4 @@ export { default as ButtonAddBook } from './ButtonBook/ButtonAddBook';
 export { default as ButtonFindBook } from './ButtonBook/ButtonFindBook';
 export { default as BottomTabNavigation } from './BottomTabNavigation/BottomTabNavigation';
 export { default as HeaderDetailsUser } from './HeaderDetailsUser/HeaderDetailsUser';
+export { default as Loading } from './Loading/Loading';

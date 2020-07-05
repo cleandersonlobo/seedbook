@@ -9,8 +9,7 @@ import BookStore from 'screens/BookStore/BookStore';
 import MyCollections from 'screens/MyCollections/MyCollections';
 import WriteBook from 'screens/WriteBook/WriteBook';
 import { transitionSpec } from 'helpers/utils';
-import { gloablStyles } from 'styles';
-import BtnBack from './components/BtnBack/BtnBack';
+import Storage from 'screens/Storage/Storage';
 
 const MainStack = createStackNavigator();
 
@@ -69,6 +68,14 @@ const RouteStack: React.FC = () => {
       <MainStack.Screen
         name="Editora"
         component={WriteBook}
+        options={{
+          headerShown: false,
+          transitionSpec,
+        }}
+      />
+      <MainStack.Screen
+        name="Loja"
+        component={Storage}
         options={{
           headerShown: false,
           transitionSpec,
