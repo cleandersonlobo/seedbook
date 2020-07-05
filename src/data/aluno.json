@@ -1,0 +1,11 @@
+{
+  "nome": "João da Silva de Araújo",
+  "usuario": "@joaozinho",
+  "profilepicture": "boy-5",
+  "escola":"Escola da Alegria",
+  "turma": "4º ano B",
+  "livros": {
+    "lidos": 23,
+    "lendo": 2
+  }
+}

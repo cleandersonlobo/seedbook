@@ -11,3 +11,13 @@ interface CardButtonItem {
   svg?: Promise<typeof import('*.svg')>;
   image?: string;
 }
+
+interface PersonagenDataIcons {
+  [key: string]: Promise<typeof import('*.svg')>;
+}
+
+interface ColegasProps {
+  [key: string]: string;
+  profilepicture: string;
+  usuario: string;
+}

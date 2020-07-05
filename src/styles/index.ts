@@ -15,6 +15,11 @@ export const SafeAreaContainer = styled.SafeAreaView`
   background-color: ${props => props.theme.colors.background};
 `;
 
+export const Container = styled.View`
+  padding: ${props => props.theme.spacing.medium}px;
+  justify-content: center;
+`;
+
 export const gloablStyles = StyleSheet.create({
   container: {
     flex: 1,

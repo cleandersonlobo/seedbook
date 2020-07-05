@@ -31,10 +31,12 @@ interface DefaultTheme {
   };
   fontSize: {
     [key: string]: number;
+    xlarge: number;
     large: number;
     medium: number;
     small: number;
     tiny: number;
+    xtiny: number;
   };
 }
 declare module 'styled-components' {
