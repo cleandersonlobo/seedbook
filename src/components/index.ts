@@ -7,3 +7,4 @@ export { default as BottomMascoteBar } from './BottomMascoteBar/BottomMascoteBar
 export { default as ButtonBook } from './ButtonBook/ButtonBook';
 export { default as ButtonAddBook } from './ButtonBook/ButtonAddBook';
 export { default as ButtonFindBook } from './ButtonBook/ButtonFindBook';
+export { default as BottomTabNavigation } from './BottomTabNavigation/BottomTabNavigation';
