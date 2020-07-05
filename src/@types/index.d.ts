@@ -18,9 +18,11 @@ interface CardButtonItem {
 }
 
 interface SVGDataIcons {
-  [key: string]: Promise<typeof import('*.svg')>;
+  [key: string]: Promise<typeof import('*.svg')> | undefined | any;
 }
-
+interface PacksProps {
+  [key: string]: SVGDataIcons;
+}
 interface ColegasProps {
   [key: string]: string;
   profilepicture: string;

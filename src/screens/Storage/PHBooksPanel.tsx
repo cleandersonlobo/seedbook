@@ -3,11 +3,11 @@ import { Placeholder, PlaceholderLine, Fade } from 'rn-placeholder';
 import { View } from 'react-native';
 import { ViewLoading } from './styles';
 
-export const PHBook: React.FC<any> = props => {
+export const PHIcon: React.FC<any> = () => {
   return (
-    <View style={{ width: 75, height: 115, marginBottom: 3 }}>
+    <View style={{ width: 60, height: 50, marginBottom: 5 }}>
       <Placeholder Animation={Fade}>
-        <PlaceholderLine height={115} style={{ borderRadius: 5 }} />
+        <PlaceholderLine height={50} style={{ borderRadius: 60 }} />
       </Placeholder>
     </View>
   );

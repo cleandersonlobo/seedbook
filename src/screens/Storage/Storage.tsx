@@ -7,12 +7,12 @@ import dimensions from 'styles/dimensions';
 import LivrosMock from 'data/livros.json';
 import PHBooksPanel from './PHBooksPanel';
 
-let BooksPanel = React.lazy(() => import('./BooksPanel'));
+let CharacterPanel = React.lazy(() => import('./CharacterPanel'));
 
 const Storage: React.FC = () => {
   React.useEffect(() => {
     return () => {
-      BooksPanel = React.lazy(() => import('./BooksPanel'));
+      CharacterPanel = React.lazy(() => import('./CharacterPanel'));
     };
   });
   return (
@@ -30,27 +30,17 @@ const Storage: React.FC = () => {
           <Container>
             <HeaderDetailsUser />
             <React.Suspense fallback={<PHBooksPanel color="purple" />}>
-              <BooksPanel
+              <CharacterPanel
                 color="purple"
-                books={LivrosMock}
-                title="Livros que eu escrevi:"
+                pack="characters"
+                title="Personagens:"
               />
             </React.Suspense>
             <React.Suspense fallback={<PHBooksPanel color="blue" />}>
-              <BooksPanel
-                color="blue"
-                books={LivrosMock}
-                buttonType="find"
-                title="Livros dos meus amigos:"
-              />
+              <CharacterPanel color="blue" pack="animais" title="Animais:" />
             </React.Suspense>
             <React.Suspense fallback={<PHBooksPanel color="green" />}>
-              <BooksPanel
-                color="green"
-                books={LivrosMock}
-                buttonType="find"
-                title="Árvore de livros:"
-              />
+              <CharacterPanel color="green" pack="cenarios" title="Cenários:" />
             </React.Suspense>
           </Container>
         </ScrollView>

@@ -13,6 +13,10 @@ export const CoinsText = styled.Text`
   text-align: center;
 `;
 
+export const ButtonContent = styled.TouchableOpacity`
+  margin-bottom: 10px;
+`;
+
 export const ViewLoading = styled.View<StyledProps>`
   padding: 20px
   border-radius: 20px;

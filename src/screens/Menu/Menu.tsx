@@ -52,7 +52,7 @@ const Menu: React.FC = () => {
               color="yellow"
               onPress={() => handleNavigate('Loja')}
             />
-            <Button text="CERTIFICADOS" />
+            <Button text="CONQUISTAS" />
           </View>
         </Container>
       </ScrollView>
