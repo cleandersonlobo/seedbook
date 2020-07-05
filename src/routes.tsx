@@ -61,11 +61,7 @@ const RouteStack: React.FC = () => {
         name="Editora"
         component={Editora}
         options={{
-          headerTintColor: '#000000',
-          headerBackTitleVisible: false,
-          headerTitle: '',
-          headerTransparent: true,
-          headerLeftContainerStyle: gloablStyles.headerLeftContainerStyle,
+          headerShown: false,
           transitionSpec,
         }}
       />

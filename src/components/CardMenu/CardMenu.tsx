@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { useMenuIconSvg } from 'hooks';
+import { useMenuIconSvg, useHandleNavigation } from 'hooks';
 import { Content, Title, Subtitle, SeparatorLine, CircleRight } from './styles';
 
 interface Props {
@@ -30,9 +30,15 @@ const CardMenu: React.FC<Props> = ({
   customColor,
   ...btnProps
 }) => {
+  const [handleNavigate] = useHandleNavigation(title);
   const { Icon } = useMenuIconSvg({ name: icon });
   return (
-    <Content color={color} {...btnProps} customColor={customColor}>
+    <Content
+      color={color}
+      {...btnProps}
+      customColor={customColor}
+      onPress={handleNavigate}
+    >
       <View style={{ flex: 1 }}>
         <Title color={textColor} fontSize={textSizes.title}>
           {title || ''}
