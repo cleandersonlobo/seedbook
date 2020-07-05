@@ -23,7 +23,11 @@ const Menu: React.FC = () => {
       >
         <Container>
           <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-            <MascoteLogo />
+            <MascoteLogo
+              fillMain="#A55FEE"
+              fillShadow="#D0A5FD"
+              fillLight="#EDE0F9"
+            />
           </View>
           <View style={{ paddingHorizontal: 40 }}>
             <Description>
@@ -38,8 +42,16 @@ const Menu: React.FC = () => {
               textColor="light"
               onPress={() => handleNavigate('CreateProfile')}
             />
-            <Button text="OPÇÕES" color="blue" />
-            <Button text="LOJA" color="yellow" />
+            <Button
+              text="OPÇÕES"
+              color="blue"
+              onPress={() => handleNavigate('Profile')}
+            />
+            <Button
+              text="LOJA"
+              color="yellow"
+              onPress={() => handleNavigate('Livraria')}
+            />
             <Button text="CERTIFICADOS" />
           </View>
         </Container>
