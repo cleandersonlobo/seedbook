@@ -8,27 +8,42 @@ interface Props {
   color: string;
   title: string;
   subtitle: string;
+  iconSize?: number;
+  textColor?: string;
+  textSizes?: {
+    title: string;
+    subtitle: string;
+  };
+  customColor?: string | undefined;
   onPress?: () => void;
   style?: any;
 }
 
 const CardMenu: React.FC<Props> = ({
   icon = 'editora',
+  iconSize = 65,
   color = 'purple',
+  textColor = 'dark',
+  textSizes = { title: 'medium', subtitle: 'tiny' },
   title,
   subtitle,
+  customColor,
   ...btnProps
 }) => {
   const { Icon } = useMenuIconSvg({ name: icon });
   return (
-    <Content color={color} {...btnProps}>
+    <Content color={color} {...btnProps} customColor={customColor}>
       <View style={{ flex: 1 }}>
-        <Title>{title || ''}</Title>
+        <Title color={textColor} fontSize={textSizes.title}>
+          {title || ''}
+        </Title>
         <SeparatorLine />
-        <Subtitle>{subtitle || ''}</Subtitle>
+        <Subtitle color={textColor} fontSize={textSizes.subtitle}>
+          {subtitle || ''}
+        </Subtitle>
       </View>
-      <CircleRight color={color}>
-        {Icon ? <Icon height={65} /> : null}
+      <CircleRight color={color} customColor={customColor}>
+        {Icon ? <Icon height={iconSize} width={iconSize} /> : null}
       </CircleRight>
     </Content>
   );

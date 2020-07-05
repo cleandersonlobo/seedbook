@@ -5,6 +5,7 @@ import Menu from 'screens/Menu/Menu';
 import CreateProfile from 'screens/CreateProfile/CreateProfile';
 import Profile from 'screens/Profile/Profile';
 import Home from 'screens/Home/Home';
+import Editora from 'screens/Editora/Editora';
 import { transitionSpec } from 'helpers/utils';
 import { gloablStyles } from 'styles';
 
@@ -12,7 +13,7 @@ const MainStack = createStackNavigator();
 
 const RouteStack: React.FC = () => {
   return (
-    <MainStack.Navigator initialRouteName="Home">
+    <MainStack.Navigator initialRouteName="Editora">
       <MainStack.Screen
         name="Menu"
         component={Menu}
@@ -48,6 +49,18 @@ const RouteStack: React.FC = () => {
       <MainStack.Screen
         name="Home"
         component={Home}
+        options={{
+          headerTintColor: '#000000',
+          headerBackTitleVisible: false,
+          headerTitle: '',
+          headerTransparent: true,
+          headerLeftContainerStyle: gloablStyles.headerLeftContainerStyle,
+          transitionSpec,
+        }}
+      />
+      <MainStack.Screen
+        name="Editora"
+        component={Editora}
         options={{
           headerTintColor: '#000000',
           headerBackTitleVisible: false,

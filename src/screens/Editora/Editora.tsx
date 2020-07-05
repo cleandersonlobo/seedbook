@@ -4,38 +4,49 @@ import AlunoMock from 'data/aluno.json';
 import { View, ScrollView } from 'react-native';
 import { CharacterButton, CardMenu } from 'components';
 import IconDollar from 'assets/svg/dollar.svg';
+import { useHandleNavigation } from 'hooks';
 import { Description, CoinsText } from './styles';
 
-const Home: React.FC = () => {
+const Editora: React.FC = () => {
+  const [handleOnNavigate] = useHandleNavigation('Profile');
   const { profilepicture, usuario } = AlunoMock;
+
   return (
     <SafeAreaContainer>
       <ScrollView>
         <Container>
           <View style={[gloablStyles.alignCenter, { marginVertical: 20 }]}>
-            <CharacterButton btnSize={47} size={30} name={profilepicture} />
+            <CharacterButton
+              btnSize={47}
+              size={30}
+              name={profilepicture}
+              onPress={handleOnNavigate}
+            />
             <Description>{usuario}</Description>
           </View>
           <CardMenu
             style={{ marginBottom: 20 }}
             color="purple"
-            icon="editora"
-            title="Editora"
-            subtitle="Crie sua própria história, como quiser, aqui não tem limites para sua
-          imaginação."
+            icon={profilepicture}
+            title="Minha coleção"
+            subtitle="Livros que eu fiz, que lí e que adquiri."
           />
           <CardMenu
             style={{ marginBottom: 20 }}
             color="blue"
-            icon="livraria"
-            title="Livraria"
-            subtitle="Leia, curta e compartilhe histórias com seus amigos."
+            icon="pesquisar"
+            title="Pesquisar"
+            subtitle="Encontre livros dos seus amigos, os mais lidos e sugestões para você."
           />
           <CardMenu
-            color="yellow"
-            icon="curadoria"
-            title="Curadoria"
-            subtitle="Crie livros a partir de temas e palavras selecionadas pelo seus professores."
+            color="green"
+            customColor="#45CBCD"
+            textColor="light"
+            textSizes={{ title: 'large', subtitle: 'medium' }}
+            icon="arvore"
+            title="Árvore"
+            iconSize={110}
+            subtitle="Aqui tem mais de 30 mil lívros para você escolher."
           />
           <View
             style={[
@@ -59,4 +70,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Editora;
