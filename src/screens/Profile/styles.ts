@@ -41,6 +41,21 @@ export const ContentCharacter = styled.TouchableOpacity<ContentCharacterProps>`
 
 export const Description = styled.Text<PText>`
   font-size: ${props => props.theme.fontSize[props.size || 'small']}px;
+  color: ${props => props.theme.colors.text.dark}
+  text-align: center;
+  margin-bottom: 10px;
+`;
+
+export const UsuarioText = styled.Text<PText>`
+  font-size: ${props => props.theme.fontSize[props.size || 'small']}px;
+  color: ${props => props.theme.colors.dark}
+  text-align: center;
+  margin-bottom: 10px;
+`;
+
+export const Title = styled.Text<PText>`
+  font-size: ${props => props.theme.fontSize[props.size || 'small']}px;
+  color: ${props => props.theme.colors.dark}
   text-align: center;
   margin-bottom: 10px;
 `;

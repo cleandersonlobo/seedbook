@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import { Character } from 'components';
 import { gloablStyles } from 'styles';
-import { ContentCharacter, Description } from './styles';
+import { ContentCharacter, UsuarioText } from './styles';
 
 interface Props {
   colega: ColegasProps;
@@ -16,7 +16,7 @@ const BtnCircleFirend: React.FC<Props> = ({ colega, usuario }) => {
         <ContentCharacter size={58} color="blue">
           <Character name={colega.profilepicture} width={40} height={40} />
         </ContentCharacter>
-        <Description size="xtiny">{usuario}</Description>
+        <UsuarioText size="xtiny">{usuario}</UsuarioText>
       </View>
       <View style={{ width: 20 }} />
     </>

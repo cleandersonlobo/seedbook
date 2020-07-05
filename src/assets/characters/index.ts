@@ -51,7 +51,7 @@ export const Personagens_Icons = [
   { name: 'boy', file: '050-boy.svg' },
 ];
 
-export const PersonagenIcons: PersonagenDataIcons = {
+export const PersonagenIcons: SVGDataIcons = {
   'girl-10': import('./001-girl-10.svg'),
   'girl-9': import('./002-girl-9.svg'),
   'boy-20': import('./003-boy-20.svg'),

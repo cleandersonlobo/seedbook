@@ -10,5 +10,6 @@ export const Description = styled.Text`
   font-weight: normal;
   font-size: ${props => props.theme.fontSize.small}px;
   line-height: ${props => props.theme.fontSize.large}px;
+  color: ${props => props.theme.colors.text.dark};
   text-align: center;
 `;

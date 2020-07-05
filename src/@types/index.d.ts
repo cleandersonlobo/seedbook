@@ -12,7 +12,7 @@ interface CardButtonItem {
   image?: string;
 }
 
-interface PersonagenDataIcons {
+interface SVGDataIcons {
   [key: string]: Promise<typeof import('*.svg')>;
 }
 
@@ -20,4 +20,9 @@ interface ColegasProps {
   [key: string]: string;
   profilepicture: string;
   usuario: string;
+}
+
+interface StyledProps {
+  color?: string;
+  size?: number;
 }
