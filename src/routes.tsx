@@ -11,7 +11,7 @@ const MainStack = createStackNavigator();
 
 const RouteStack: React.FC = () => {
   return (
-    <MainStack.Navigator initialRouteName="Menu">
+    <MainStack.Navigator initialRouteName="Profile">
       <MainStack.Screen
         name="Menu"
         component={Menu}

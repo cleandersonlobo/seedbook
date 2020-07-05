@@ -1,27 +1,36 @@
-import React, { useCallback, useEffect } from 'react';
-import { View, FlatList } from 'react-native';
-import { Character } from 'components';
-import { gloablStyles } from 'styles';
-import { ContentCharacter, Description } from './styles';
+/* eslint-disable react/no-array-index-key */
+import React from 'react';
+import { Placeholder, PlaceholderLine, Fade } from 'rn-placeholder';
+
+const SuspenseLoading: React.FC = () => {
+  return (
+    <Placeholder
+      Animation={Fade}
+      style={{ width: 58, height: 58, borderRadius: 58 }}
+    >
+      <PlaceholderLine width={58} height={58} />
+    </Placeholder>
+  );
+};
 
 interface Props {
   colegas: ColegasProps[];
   usuario: string;
+  pos: number;
 }
 
-const RowFriends: React.FC<Props> = ({ colegas, usuario }) => {
+const BtnCircleFirend = React.lazy(() => import('./BtnCircleFirend'));
+
+const RowFriends: React.FC<Props> = ({ colegas, usuario, pos }) => {
   return (
     <>
-      {colegas.map(item => (
-        <>
-          <View style={gloablStyles.alignCenter} key={item.usuario}>
-            <ContentCharacter size={58} color="blue">
-              <Character name={item.profilepicture} width={40} height={40} />
-            </ContentCharacter>
-            <Description size="xtiny">{usuario}</Description>
-          </View>
-          <View style={{ width: 20 }} />
-        </>
+      {colegas.map((item, index) => (
+        <React.Suspense
+          fallback={<SuspenseLoading />}
+          key={`${pos}_${item.profilepicture}_${index * new Date().getTime()}`}
+        >
+          <BtnCircleFirend colega={item} usuario={usuario} />
+        </React.Suspense>
       ))}
     </>
   );

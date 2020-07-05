@@ -39,6 +39,7 @@ const Profile: React.FC = () => {
                   <View style={{ flexDirection: 'row' }}>
                     <RowFriends
                       key={key}
+                      pos={pos}
                       colegas={colegas[key]}
                       usuario={usuario}
                     />
