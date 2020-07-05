@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, ScrollView } from 'react-native';
 import { SafeAreaContainer, Container, gloablStyles } from 'styles';
+import { HeaderDetailsUser, BottomTabNavigation } from 'components';
 import BackgroundSVG from 'assets/svg/background_form.svg';
 import dimensions from 'styles/dimensions';
 import LivrosMock from 'data/livros.json';
-import HeaderCollection from './HeaderCollection';
 import PHBooksPanel from './PHBooksPanel';
 
 let BooksPanel = React.lazy(() => import('./BooksPanel'));
@@ -28,7 +28,7 @@ const MyCollections: React.FC = () => {
         </View>
         <ScrollView>
           <Container>
-            <HeaderCollection />
+            <HeaderDetailsUser />
             <React.Suspense fallback={<PHBooksPanel color="purple" />}>
               <BooksPanel
                 color="purple"
@@ -55,6 +55,7 @@ const MyCollections: React.FC = () => {
           </Container>
         </ScrollView>
       </SafeAreaContainer>
+      <BottomTabNavigation />
     </>
   );
 };

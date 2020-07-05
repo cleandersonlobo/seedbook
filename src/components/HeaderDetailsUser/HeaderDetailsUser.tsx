@@ -7,7 +7,7 @@ import IconDollar from 'assets/svg/dollar.svg';
 import IconMascote from 'assets/svg/mascote.svg';
 import { CoinsText } from './styles';
 
-const HeaderCollection: React.FC = () => {
+const HeaderDetailsUser: React.FC = () => {
   const { profilepicture } = useContext(AlunoContext);
   return (
     <View
@@ -42,4 +42,4 @@ const HeaderCollection: React.FC = () => {
   );
 };
 
-export default HeaderCollection;
+export default HeaderDetailsUser;
