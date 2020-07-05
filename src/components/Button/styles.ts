@@ -20,7 +20,7 @@ export const TouchOpacity = styled.TouchableOpacity<Props>`
 export const Text = styled.Text<Props>`
   font-style: normal;
   font-weight: 800;
-  color: ${props => props.theme.colors.text[props.color || 'dark']};
+  color: ${props => props.theme.colors[props.color || 'dark']};
   font-size: ${props => props.theme.fontSize[props.textSize || 'large']}px;
   line-height: 26px;
   text-align: center;
