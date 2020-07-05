@@ -1,4 +1,5 @@
 {
+  "id": "5f00a26a3ed4d29bf3f6e6a1",
   "nome": "João da Silva de Araújo",
   "usuario": "@joaozinho",
   "profilepicture": "boy-5",
@@ -7,5 +8,6 @@
   "livros": {
     "lidos": 23,
     "lendo": 2
-  }
+  },
+  "coins": 50
 }
