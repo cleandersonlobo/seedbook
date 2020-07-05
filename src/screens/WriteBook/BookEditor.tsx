@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, TextInput } from 'react-native';
+import { View } from 'react-native';
 import { Container, gloablStyles } from 'styles';
 
 import { FlatList } from 'react-native-gesture-handler';
-import { NumberPage, WordButton, WordButtonText } from './styles';
+import { NumberPage, WordButton, WordButtonText, Input } from './styles';
 
 const BookEditor: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const BookEditor: React.FC = () => {
           <NumberPage>1</NumberPage>
         </View>
         <View style={gloablStyles.alignCenter}>
-          <TextInput
+          <Input
             placeholder="TÍTULO"
             maxLength={100}
             numberOfLines={2}
@@ -42,7 +42,7 @@ const BookEditor: React.FC = () => {
             gloablStyles.alignCenter,
           ]}
         >
-          <TextInput
+          <Input
             placeholder="Crie sua história"
             style={{ fontSize: 14, width: '100%', textAlign: 'center' }}
             multiline

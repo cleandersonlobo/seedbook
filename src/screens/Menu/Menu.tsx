@@ -50,7 +50,7 @@ const Menu: React.FC = () => {
             <Button
               text="LOJA"
               color="yellow"
-              onPress={() => handleNavigate('Livraria')}
+              onPress={() => handleNavigate('Loja')}
             />
             <Button text="CERTIFICADOS" />
           </View>

@@ -1,11 +1,10 @@
 import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
 import { SketchCanvas } from '@terrylinla/react-native-sketch-canvas';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IconPaint from 'assets/svg/paint.svg';
 import { gloablStyles } from 'styles';
+import { Icon } from './styles';
 
-Icon.loadFont();
 const Canvas: React.FC = () => {
   return (
     <>
