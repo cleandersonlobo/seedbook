@@ -6,5 +6,6 @@ export const SVGIconsMenus: SVGDataIcons = {
   curadoria: import('assets/menu/curadoria.svg'),
   pesquisar: import('assets/menu/pesquisar.svg'),
   arvore: import('assets/menu/arvore.svg'),
+  novoBook: import('assets/svg/new_book.svg'),
   ...PersonagenIcons,
 };
