@@ -1,0 +1,7 @@
+{
+  "replaceAttrValues": {
+    "#A55FEE": "{props.fillMain}",
+    "#D0A5FD": "{props.fillShadow}",
+    "#EDE0F9": "{props.fillLight}"
+  }
+}

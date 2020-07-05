@@ -20,6 +20,29 @@ export const Container = styled.View`
   justify-content: center;
 `;
 
+export const CardBooks = styled.View<StyledProps>`
+  padding: 20px
+  border-radius: 20px;
+  margin-bottom: 30px;
+  background-color: ${props => props.theme.colors[props.color || 'blue'].light};
+`;
+
+export const CardBooksBody = styled.View<StyledProps>`
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const CardBooksTitle = styled.Text<StyledProps>`
+  font-weight: 600;
+  font-size: ${props => props.theme.fontSize[props.size || 'small']}px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: ${props => props.theme.colors[props.color || 'blue'].main};
+`;
+
 export const gloablStyles = StyleSheet.create({
   container: {
     flex: 1,

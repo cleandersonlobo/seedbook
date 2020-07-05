@@ -4,3 +4,6 @@ export { default as Character } from './Character/Character';
 export { default as CharacterButton } from './Character/CharacterButton';
 export { default as CardMenu } from './CardMenu/CardMenu';
 export { default as BottomMascoteBar } from './BottomMascoteBar/BottomMascoteBar';
+export { default as ButtonBook } from './ButtonBook/ButtonBook';
+export { default as ButtonAddBook } from './ButtonBook/ButtonAddBook';
+export { default as ButtonFindBook } from './ButtonBook/ButtonFindBook';

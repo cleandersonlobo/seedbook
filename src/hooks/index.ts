@@ -1,5 +1,5 @@
 /* eslint-disable no-useless-catch */
-import React from 'react';
+import React, { Image } from 'react';
 import { SVGIconsMenus } from 'assets/menu';
 import { useNavigation } from '@react-navigation/native';
 
@@ -11,7 +11,13 @@ export const useHandleNavigation = (route: string): any => {
   return [navigateTo];
 };
 
-export const useMenuIconSvg = ({ name }: { name: string }): any => {
+export const useMenuIconSvg = ({
+  name,
+  type = 'svg',
+}: {
+  name: string;
+  type?: string;
+}): any => {
   const ImportedIconRef = React.useRef<any>(null);
   const [loading, setLoading] = React.useState(false);
 
@@ -27,7 +33,8 @@ export const useMenuIconSvg = ({ name }: { name: string }): any => {
         setLoading(false);
       }
     };
-    importIcon();
+    if (type === 'svg') importIcon();
+    else ImportedIconRef.current = Image;
   }, []);
 
   return { loading, Icon: ImportedIconRef.current };

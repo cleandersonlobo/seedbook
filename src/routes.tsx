@@ -5,7 +5,8 @@ import Menu from 'screens/Menu/Menu';
 import CreateProfile from 'screens/CreateProfile/CreateProfile';
 import Profile from 'screens/Profile/Profile';
 import Home from 'screens/Home/Home';
-import Editora from 'screens/Editora/Editora';
+import BookStore from 'screens/BookStore/BookStore';
+import MyCollections from 'screens/MyCollections/MyCollections';
 import { transitionSpec } from 'helpers/utils';
 import { gloablStyles } from 'styles';
 import BtnBack from './components/BtnBack/BtnBack';
@@ -14,7 +15,7 @@ const MainStack = createStackNavigator();
 
 const RouteStack: React.FC = () => {
   return (
-    <MainStack.Navigator initialRouteName="Menu">
+    <MainStack.Navigator initialRouteName="Minha coleção">
       <MainStack.Screen
         name="Menu"
         component={Menu}
@@ -58,8 +59,16 @@ const RouteStack: React.FC = () => {
         }}
       />
       <MainStack.Screen
-        name="Editora"
-        component={Editora}
+        name="Livraria"
+        component={BookStore}
+        options={{
+          headerShown: false,
+          transitionSpec,
+        }}
+      />
+      <MainStack.Screen
+        name="Minha coleção"
+        component={MyCollections}
         options={{
           headerShown: false,
           transitionSpec,

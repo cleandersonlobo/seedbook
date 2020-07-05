@@ -24,7 +24,7 @@ interface ColegasProps {
 
 interface StyledProps {
   color?: string;
-  size?: number;
+  size?: number | string;
   customColor?: string | undefined;
   fontSize?: string | undefined;
 }

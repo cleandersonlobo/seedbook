@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { SafeAreaContainer, Container, gloablStyles } from 'styles';
-import AlunoMock from 'data/aluno.json';
 import { View, ScrollView } from 'react-native';
 import { CharacterButton, CardMenu, BottomMascoteBar } from 'components';
 import IconDollar from 'assets/svg/dollar.svg';
+import { AlunoContext } from 'contexts';
 import { Description, CoinsText } from './styles';
 
 const Home: React.FC = () => {
-  const { profilepicture, usuario } = AlunoMock;
+  const { profilepicture, usuario } = useContext(AlunoContext);
   return (
     <>
       <SafeAreaContainer>
