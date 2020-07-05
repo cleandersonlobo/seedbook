@@ -29,12 +29,7 @@ const RouteStack: React.FC = () => {
         name="CreateProfile"
         component={CreateProfile}
         options={{
-          headerBackImage: BtnBack,
-          headerTintColor: '#000000',
-          headerBackTitleVisible: false,
-          headerTitle: '',
-          headerTransparent: true,
-          headerLeftContainerStyle: gloablStyles.headerLeftContainerStyle,
+          headerShown: false,
           transitionSpec,
         }}
       />
@@ -42,12 +37,7 @@ const RouteStack: React.FC = () => {
         name="Profile"
         component={Profile}
         options={{
-          headerBackImage: BtnBack,
-          headerTintColor: '#000000',
-          headerBackTitleVisible: false,
-          headerTitle: '',
-          headerTransparent: true,
-          headerLeftContainerStyle: gloablStyles.headerLeftContainerStyle,
+          headerShown: false,
           transitionSpec,
         }}
       />
@@ -71,6 +61,7 @@ const RouteStack: React.FC = () => {
         name="Minha coleção"
         component={MyCollections}
         options={{
+          animationEnabled: true,
           headerShown: false,
           transitionSpec,
         }}

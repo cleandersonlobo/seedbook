@@ -1,11 +1,22 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
+import { SafeAreaContainer } from 'styles';
+
+import { BottomTabNavigation } from 'components';
+import Canvas from './Canvas';
+import BookEditor from './BookEditor';
 
 const WriteBook: React.FC = () => {
   return (
-    <View>
-      <Text />
-    </View>
+    <>
+      <SafeAreaContainer>
+        <ScrollView style={{ flexGrow: 1 }} contentContainerStyle={{ flex: 1 }}>
+          <BookEditor />
+        </ScrollView>
+        <Canvas />
+      </SafeAreaContainer>
+      <BottomTabNavigation />
+    </>
   );
 };
 

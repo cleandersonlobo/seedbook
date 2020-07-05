@@ -46,7 +46,7 @@ export const light: DefaultTheme = {
     },
     black: '#000000',
     white: '#ffffff',
-    background: '#f5f5f5',
+    background: '#ffffff',
     dark: '#3D3F3E',
     light: '#f5f5f5',
     text: {
