@@ -12,3 +12,11 @@ export const CoinsText = styled.Text`
   color: ${props => props.theme.colors.text.dark};
   text-align: center;
 `;
+
+export const ViewLoading = styled.View<StyledProps>`
+  padding: 20px
+  border-radius: 20px;
+  margin-bottom: 30px;
+  height: 305px;
+  background-color: ${props => props.theme.colors[props.color || 'blue'].light};
+`;

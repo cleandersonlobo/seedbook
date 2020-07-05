@@ -1,20 +1,20 @@
 import React from 'react';
 import { View, ScrollView } from 'react-native';
-import {
-  SafeAreaContainer,
-  Container,
-  gloablStyles,
-  CardBooks,
-  CardBooksTitle,
-  CardBooksBody,
-} from 'styles';
+import { SafeAreaContainer, Container, gloablStyles } from 'styles';
 import BackgroundSVG from 'assets/svg/background_form.svg';
 import dimensions from 'styles/dimensions';
 import LivrosMock from 'data/livros.json';
-import { ButtonAddBook, ButtonBook, ButtonFindBook } from 'components';
 import HeaderCollection from './HeaderCollection';
+import PHBooksPanel from './PHBooksPanel';
+
+let BooksPanel = React.lazy(() => import('./BooksPanel'));
 
 const MyCollections: React.FC = () => {
+  React.useEffect(() => {
+    return () => {
+      BooksPanel = React.lazy(() => import('./BooksPanel'));
+    };
+  });
   return (
     <>
       <SafeAreaContainer>
@@ -29,40 +29,29 @@ const MyCollections: React.FC = () => {
         <ScrollView>
           <Container>
             <HeaderCollection />
-            <CardBooks color="purple">
-              <CardBooksTitle color="purple" size="medium">
-                Livros que eu escrevi:
-              </CardBooksTitle>
-              <CardBooksBody>
-                {LivrosMock.map((item, index) => (
-                  <ButtonBook key={`livro_${index}`} uri={item.url} />
-                ))}
-                <ButtonAddBook />
-              </CardBooksBody>
-            </CardBooks>
-            <CardBooks color="blue">
-              <CardBooksTitle color="blue" size="medium">
-                Livros dos meus amigos:
-              </CardBooksTitle>
-              <CardBooksBody>
-                {LivrosMock.map((item, index) => (
-                  <ButtonBook key={`livro_${index}`} uri={item.url} />
-                ))}
-                <ButtonFindBook color="blue" />
-              </CardBooksBody>
-            </CardBooks>
-
-            <CardBooks color="green">
-              <CardBooksTitle color="green" size="medium">
-                Árvore de livros:
-              </CardBooksTitle>
-              <CardBooksBody>
-                {LivrosMock.map((item, index) => (
-                  <ButtonBook key={`livro_${index}`} uri={item.url} />
-                ))}
-                <ButtonFindBook color="green" />
-              </CardBooksBody>
-            </CardBooks>
+            <React.Suspense fallback={<PHBooksPanel color="purple" />}>
+              <BooksPanel
+                color="purple"
+                books={LivrosMock}
+                title="Livros que eu escrevi:"
+              />
+            </React.Suspense>
+            <React.Suspense fallback={<PHBooksPanel color="blue" />}>
+              <BooksPanel
+                color="blue"
+                books={LivrosMock}
+                buttonType="find"
+                title="Livros dos meus amigos:"
+              />
+            </React.Suspense>
+            <React.Suspense fallback={<PHBooksPanel color="green" />}>
+              <BooksPanel
+                color="green"
+                books={LivrosMock}
+                buttonType="find"
+                title="Árvore de livros:"
+              />
+            </React.Suspense>
           </Container>
         </ScrollView>
       </SafeAreaContainer>
