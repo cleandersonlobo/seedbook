@@ -6,7 +6,10 @@ import { ContentHeader, Description } from './styles';
 const Header: React.FC = () => {
   return (
     <ContentHeader>
-      <BackgroundSVG style={{ position: 'absolute', top: 0 }} />
+      <BackgroundSVG
+        style={{ position: 'absolute', top: 0 }}
+        fillLight="#EDE0F9"
+      />
       <View>
         <Description size="medium" style={{ fontWeight: 'bold' }}>
           Queremos te conhecer.

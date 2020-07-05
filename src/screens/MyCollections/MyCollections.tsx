@@ -23,6 +23,7 @@ const MyCollections: React.FC = () => {
             style={{ position: 'absolute', top: -155 }}
             height={(dimensions.fullWidth - 10) / 2}
             width={(dimensions.fullHeight - 10) / 2}
+            fillLight="#EDE0F9"
           />
         </View>
         <ScrollView>
