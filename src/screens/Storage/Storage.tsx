@@ -4,7 +4,6 @@ import { SafeAreaContainer, Container, gloablStyles } from 'styles';
 import BackgroundSVG from 'assets/svg/background_form.svg';
 import { HeaderDetailsUser, BottomTabNavigation } from 'components';
 import dimensions from 'styles/dimensions';
-import LivrosMock from 'data/livros.json';
 import PHBooksPanel from './PHBooksPanel';
 
 let CharacterPanel = React.lazy(() => import('./CharacterPanel'));
@@ -23,7 +22,7 @@ const Storage: React.FC = () => {
             style={{ position: 'absolute', top: -155 }}
             height={(dimensions.fullWidth - 10) / 2}
             width={(dimensions.fullHeight - 10) / 2}
-            fillLight="#EDE0F9"
+            fillLight="#fedbd0"
           />
         </View>
         <ScrollView>

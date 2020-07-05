@@ -5,10 +5,13 @@ import { CharacterButton } from 'components';
 import { gloablStyles } from 'styles';
 import IconDollar from 'assets/svg/dollar.svg';
 import IconMascote from 'assets/svg/mascote.svg';
+import { useHandleNavigation } from 'hooks';
 import { CoinsText } from './styles';
 
 const HeaderDetailsUser: React.FC = () => {
+  const [handleOnPress] = useHandleNavigation('Profile');
   const { profilepicture } = useContext(AlunoContext);
+
   return (
     <View
       style={{
@@ -18,7 +21,12 @@ const HeaderDetailsUser: React.FC = () => {
       }}
     >
       <View style={gloablStyles.alignCenter}>
-        <CharacterButton btnSize={40} size={28} name={profilepicture} />
+        <CharacterButton
+          btnSize={40}
+          size={28}
+          name={profilepicture}
+          onPress={handleOnPress}
+        />
       </View>
       <View>
         <IconMascote height={100} />
