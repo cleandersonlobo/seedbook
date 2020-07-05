@@ -1,7 +1,7 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Home from 'screens/Home/Home';
+import Menu from 'screens/Menu/Menu';
 import CreateProfile from 'screens/CreateProfile/CreateProfile';
 import Profile from 'screens/Profile/Profile';
 import { transitionSpec } from 'helpers/utils';
@@ -11,10 +11,10 @@ const MainStack = createStackNavigator();
 
 const RouteStack: React.FC = () => {
   return (
-    <MainStack.Navigator initialRouteName="Profile">
+    <MainStack.Navigator initialRouteName="Menu">
       <MainStack.Screen
-        name="Home"
-        component={Home}
+        name="Menu"
+        component={Menu}
         options={{
           headerShown: false,
           transitionSpec,

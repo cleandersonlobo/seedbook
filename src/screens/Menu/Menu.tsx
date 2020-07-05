@@ -6,7 +6,7 @@ import MascoteLogo from 'assets/svg/name_logo.svg';
 import { useNavigation } from '@react-navigation/native';
 import { Container, Description } from './styles';
 
-const Home: React.FC = () => {
+const Menu: React.FC = () => {
   const navigation = useNavigation();
 
   const handleNavigate = React.useCallback(route => {
@@ -48,4 +48,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Menu;
