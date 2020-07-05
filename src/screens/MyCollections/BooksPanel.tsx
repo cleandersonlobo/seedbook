@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CardBooks, CardBooksTitle, CardBooksBody } from 'styles';
-import { ButtonAddBook, ButtonBook, ButtonFindBook } from 'components';
+import { ButtonAddBook, ButtonFindBook } from 'components';
+import { PHBook } from './PHBooksPanel';
 
+let ButtonBook = React.lazy(() => import('components/ButtonBook/ButtonBook'));
 interface Props {
   color?: string;
   buttonType?: string;
@@ -15,6 +17,11 @@ const BooksPanel: React.FC<Props> = ({
   books,
   buttonType = 'add',
 }) => {
+  useEffect(() => {
+    return () => {
+      ButtonBook = React.lazy(() => import('components/ButtonBook/ButtonBook'));
+    };
+  }, []);
   return (
     <CardBooks color={color}>
       <CardBooksTitle color={color} size="medium">
@@ -22,7 +29,9 @@ const BooksPanel: React.FC<Props> = ({
       </CardBooksTitle>
       <CardBooksBody>
         {books.map((item, index: number) => (
-          <ButtonBook key={`livro_${index}`} uri={item.url} />
+          <React.Suspense fallback={<PHBook />} key={`livro_${index}`}>
+            <ButtonBook uri={item.url} />
+          </React.Suspense>
         ))}
         {
           {

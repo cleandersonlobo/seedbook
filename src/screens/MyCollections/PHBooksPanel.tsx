@@ -1,6 +1,17 @@
 import React from 'react';
 import { Placeholder, PlaceholderLine, Fade } from 'rn-placeholder';
+import { View } from 'react-native';
 import { ViewLoading } from './styles';
+
+export const PHBook: React.FC<any> = props => {
+  return (
+    <View style={{ width: 75, height: 115, marginBottom: 3 }}>
+      <Placeholder Animation={Fade}>
+        <PlaceholderLine height={115} style={{ borderRadius: 5 }} />
+      </Placeholder>
+    </View>
+  );
+};
 
 const PHBooksPanel: React.FC<any> = props => {
   return (
