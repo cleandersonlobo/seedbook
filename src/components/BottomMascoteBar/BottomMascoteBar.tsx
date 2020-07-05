@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { View, TouchableOpacity } from 'react-native';
 import IconMascote from 'assets/svg/mascote.svg';
 import IconLeft from 'assets/svg/left_icon.svg';
@@ -8,19 +8,29 @@ import { Container } from './styles';
 
 interface Props {
   leftOnPress?: () => void;
+  centerOnPress?: () => void;
   rightOnPress?: () => void;
 }
 
-const BottomMascoteBar: React.FC<Props> = ({ leftOnPress, rightOnPress }) => {
+const BottomMascoteBar: React.FC<Props> = ({
+  leftOnPress,
+  rightOnPress,
+  centerOnPress,
+}) => {
   const navigation = useNavigation();
-  function handleOnLeftPress(): void {
+  const handleOnLeftPress = useCallback((): void => {
     if (leftOnPress) leftOnPress();
     else navigation.goBack();
-  }
+  }, [navigation, leftOnPress]);
 
-  function handleOnRightPress(): void {
+  const handleOnRightPress = useCallback((): void => {
     if (rightOnPress) rightOnPress();
-  }
+  }, [rightOnPress]);
+
+  const handleOnCenterPress = useCallback((): void => {
+    if (centerOnPress) centerOnPress();
+    else navigation.navigate('Menu');
+  }, [centerOnPress, navigation]);
 
   return (
     <Container>
@@ -35,9 +45,9 @@ const BottomMascoteBar: React.FC<Props> = ({ leftOnPress, rightOnPress }) => {
         <TouchableOpacity onPress={handleOnLeftPress}>
           <IconLeft />
         </TouchableOpacity>
-        <View>
+        <TouchableOpacity onPress={handleOnCenterPress}>
           <IconMascote />
-        </View>
+        </TouchableOpacity>
         <TouchableOpacity onPress={handleOnRightPress}>
           <IconRight />
         </TouchableOpacity>
