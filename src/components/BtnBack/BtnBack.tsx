@@ -1,12 +1,8 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import IconLeft from 'assets/svg/left_icon.svg';
 
 const BtnBack: React.FC = () => {
-  return (
-    <View>
-      <Text />
-    </View>
-  );
+  return <IconLeft height={48} />;
 };
 
 export default BtnBack;

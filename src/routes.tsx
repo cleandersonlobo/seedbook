@@ -8,12 +8,13 @@ import Home from 'screens/Home/Home';
 import Editora from 'screens/Editora/Editora';
 import { transitionSpec } from 'helpers/utils';
 import { gloablStyles } from 'styles';
+import BtnBack from './components/BtnBack/BtnBack';
 
 const MainStack = createStackNavigator();
 
 const RouteStack: React.FC = () => {
   return (
-    <MainStack.Navigator initialRouteName="Editora">
+    <MainStack.Navigator initialRouteName="Menu">
       <MainStack.Screen
         name="Menu"
         component={Menu}
@@ -26,6 +27,7 @@ const RouteStack: React.FC = () => {
         name="CreateProfile"
         component={CreateProfile}
         options={{
+          headerBackImage: BtnBack,
           headerTintColor: '#000000',
           headerBackTitleVisible: false,
           headerTitle: '',
@@ -38,6 +40,7 @@ const RouteStack: React.FC = () => {
         name="Profile"
         component={Profile}
         options={{
+          headerBackImage: BtnBack,
           headerTintColor: '#000000',
           headerBackTitleVisible: false,
           headerTitle: '',
@@ -50,11 +53,7 @@ const RouteStack: React.FC = () => {
         name="Home"
         component={Home}
         options={{
-          headerTintColor: '#000000',
-          headerBackTitleVisible: false,
-          headerTitle: '',
-          headerTransparent: true,
-          headerLeftContainerStyle: gloablStyles.headerLeftContainerStyle,
+          headerShown: false,
           transitionSpec,
         }}
       />

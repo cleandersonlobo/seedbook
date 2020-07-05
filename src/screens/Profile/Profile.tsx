@@ -5,11 +5,13 @@ import ColegasMock from 'data/colegas.json';
 import { Character, Button } from 'components';
 import { View, ScrollView } from 'react-native';
 import { formatFriendList } from 'helpers';
+import { useHandleNavigation } from 'hooks';
 import Header from './Header';
 import { ContentCharacter, Description, Card, CardTitle } from './styles';
 import RowFriends from './RowFriends';
 
 const Profile: React.FC = () => {
+  const [handleOnNavigate] = useHandleNavigation('Home');
   const colegas = useMemo(() => formatFriendList(ColegasMock), []);
 
   const { profilepicture, nome, usuario, escola, turma, livros } = AlunoMock;
@@ -50,6 +52,7 @@ const Profile: React.FC = () => {
           </Card>
           <View style={gloablStyles.alignCenter}>
             <Button
+              onPress={handleOnNavigate}
               spacing="tiny"
               text="CONTINUAR"
               textSize="small"
