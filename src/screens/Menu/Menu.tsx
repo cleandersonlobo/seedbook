@@ -37,7 +37,7 @@ const Menu: React.FC = () => {
           </View>
           <View>
             <Button
-              text="ENTRAR"
+              text="COMERÇAR"
               color="purple"
               textColor="light"
               onPress={() => handleNavigate('CreateProfile')}
