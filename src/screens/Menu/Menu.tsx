@@ -1,20 +1,37 @@
 import * as React from 'react';
-import { View, ScrollView } from 'react-native';
+import { View, ScrollView, Switch } from 'react-native';
 import { SafeAreaContainer } from 'styles';
 import { Button } from 'components';
 import MascoteLogo from 'assets/svg/name_logo.svg';
 import { useNavigation } from '@react-navigation/native';
+import { ThemeModeContext } from 'contexts';
 import { Container, Description } from './styles';
 
 const Menu: React.FC = () => {
   const navigation = useNavigation();
-
+  const { isDark, handleOnTheme } = React.useContext(ThemeModeContext);
   const handleNavigate = React.useCallback(route => {
     navigation.navigate(route);
   }, []);
 
   return (
     <SafeAreaContainer>
+      <View
+        style={{
+          justifyContent: 'flex-end',
+          alignItems: 'flex-end',
+          paddingHorizontal: 20,
+          backgroundColor: 'rgba(0,0,0,0)',
+        }}
+      >
+        <Switch
+          trackColor={{ false: '#767577', true: '#f4f3f4' }}
+          thumbColor={isDark ? '#A55FEE' : '#f4f3f4'}
+          ios_backgroundColor="#3e3e3e"
+          onValueChange={handleOnTheme}
+          value={isDark}
+        />
+      </View>
       <ScrollView
         contentContainerStyle={{
           justifyContent: 'center',
