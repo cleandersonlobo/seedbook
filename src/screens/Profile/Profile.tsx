@@ -1,20 +1,35 @@
-import React, { useMemo } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Container, SafeAreaContainer, gloablStyles } from 'styles';
-import AlunoMock from 'data/aluno.json';
-import ColegasMock from 'data/colegas.json';
 import { Character, Button, BottomTabNavigation } from 'components';
 import { View, ScrollView } from 'react-native';
 import { formatFriendList } from 'helpers';
 import { useHandleNavigation } from 'hooks';
+import axios from 'config/axios';
+import { AlunoContext } from 'contexts';
 import Header from './Header';
 import { ContentCharacter, Description, Card, CardTitle } from './styles';
 import RowFriends from './RowFriends';
+import { FrindListLoading } from './PlaceholdLoading';
 
 const Profile: React.FC = () => {
   const [handleOnNavigate] = useHandleNavigation('Home');
-  const colegas = useMemo(() => formatFriendList(ColegasMock), []);
-
-  const { profilepicture, nome, usuario, escola, turma, livros } = AlunoMock;
+  const [colegas, setColegas] = useState(null);
+  const {
+    id: kidId,
+    profilepicture,
+    nome,
+    usuario,
+    escola,
+    turma,
+    livros,
+  } = useContext(AlunoContext);
+  useEffect(() => {
+    const getColegas = async (): Promise<void> => {
+      const { data } = await axios.get(`kids/sameclass/${kidId}`);
+      setColegas(formatFriendList(data.kids));
+    };
+    getColegas();
+  }, []);
 
   return (
     <>
@@ -38,16 +53,20 @@ const Profile: React.FC = () => {
               <CardTitle style={{ marginBottom: 20 }}>Amigos</CardTitle>
               <ScrollView horizontal>
                 <View>
-                  {Object.keys(colegas).map((key, pos) => (
-                    <View style={{ flexDirection: 'row' }}>
-                      <RowFriends
-                        key={key}
-                        pos={pos}
-                        colegas={colegas[key]}
-                        usuario={usuario}
-                      />
-                    </View>
-                  ))}
+                  {!colegas ? (
+                    <FrindListLoading />
+                  ) : (
+                    Object.keys(colegas).map((key, pos) => (
+                      <View style={{ flexDirection: 'row' }}>
+                        <RowFriends
+                          key={key}
+                          pos={pos}
+                          colegas={colegas[key]}
+                          usuario={usuario}
+                        />
+                      </View>
+                    ))
+                  )}
                 </View>
               </ScrollView>
             </Card>
