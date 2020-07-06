@@ -2,6 +2,7 @@
   "name": "seedbook",
   "version": "0.0.1",
   "private": true,
+  "repository": "https://github.com/cleandersonlobo/seedbook",
   "author": "Cleanderson Lobo",
   "scripts": {
     "android": "npx react-native run-android",
