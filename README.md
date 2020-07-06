@@ -126,6 +126,14 @@ Usuário pode comprar personagens, personagens para usar nos livros.
 </p>
 
 
+### Dark Theme
+
+<p>
+  <a href="https://github.com/cleandersonlobo/seedbook/">
+    <img src="./images/image11.png" alt="Logo" height=800>
+  </a>
+</p>
+
 
 ## Links
 
