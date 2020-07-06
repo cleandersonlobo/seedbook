@@ -1,17 +1,26 @@
+/* eslint-disable prettier/prettier */
 import * as React from 'react';
-import { View, ScrollView, Switch } from 'react-native';
+import { View, ScrollView, Switch, Linking } from 'react-native';
 import { SafeAreaContainer } from 'styles';
 import { Button } from 'components';
 import MascoteLogo from 'assets/svg/name_logo.svg';
+
 import { useNavigation } from '@react-navigation/native';
 import { ThemeModeContext } from 'contexts';
-import { Container, Description } from './styles';
+import { Container, Description, ViewButton, ButtonIcon, Icon } from './styles';
 
 const Menu: React.FC = () => {
   const navigation = useNavigation();
   const { isDark, handleOnTheme } = React.useContext(ThemeModeContext);
-  const handleNavigate = React.useCallback(route => {
-    navigation.navigate(route);
+  const handleNavigate = React.useCallback(
+    route => {
+      navigation.navigate(route);
+    },
+    [navigation],
+  );
+
+  const handleOpenUrl = React.useCallback(url => {
+    Linking.openURL(url);
   }, []);
 
   return (
@@ -76,6 +85,20 @@ const Menu: React.FC = () => {
           </View>
         </Container>
       </ScrollView>
+      <ViewButton>
+        <ButtonIcon
+          onPress={() =>
+            handleOpenUrl('https://github.com/cleandersonlobo/seedbook')}
+        >
+          <Icon name="github" />
+        </ButtonIcon>
+        <ButtonIcon
+          onPress={() =>
+            handleOpenUrl('https://www.linkedin.com/in/cleandersonlobo/')}
+        >
+          <Icon name="linkedin" />
+        </ButtonIcon>
+      </ViewButton>
     </SafeAreaContainer>
   );
 };
