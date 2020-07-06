@@ -11,6 +11,12 @@
   Uma nova forma de ler e escrever, onde a regra é sem limites para imaginação.
   </p>
 
+<p align="center">
+  <a href="https://youtu.be/lx43uIKz6qo"> Demo + Pitch
+  <p>
+</p>
+
+
 ## Libraries and tools
 
 * TypeScript
