@@ -10,6 +10,7 @@ import MyCollections from 'screens/MyCollections/MyCollections';
 import WriteBook from 'screens/WriteBook/WriteBook';
 import { transitionSpec } from 'helpers/utils';
 import Storage from 'screens/Storage/Storage';
+import SearchBooks from 'screens/SearchBooks/SearchBooks';
 
 const MainStack = createStackNavigator();
 
@@ -84,6 +85,14 @@ const RouteStack: React.FC = () => {
       <MainStack.Screen
         name="Loja"
         component={Storage}
+        options={{
+          headerShown: false,
+          transitionSpec,
+        }}
+      />
+      <MainStack.Screen
+        name="Pesquisar"
+        component={SearchBooks}
         options={{
           headerShown: false,
           transitionSpec,

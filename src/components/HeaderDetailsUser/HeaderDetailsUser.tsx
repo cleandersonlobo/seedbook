@@ -8,7 +8,9 @@ import IconMascote from 'assets/svg/mascote.svg';
 import { useHandleNavigation } from 'hooks';
 import { CoinsText } from './styles';
 
-const HeaderDetailsUser: React.FC = () => {
+const HeaderDetailsUser: React.FC<{ disableCenter?: boolean }> = ({
+  disableCenter = false,
+}) => {
   const [handleOnPress] = useHandleNavigation('Profile');
   const { profilepicture } = useContext(AlunoContext);
 
@@ -28,9 +30,7 @@ const HeaderDetailsUser: React.FC = () => {
           onPress={handleOnPress}
         />
       </View>
-      <View>
-        <IconMascote height={100} />
-      </View>
+      <View>{!disableCenter && <IconMascote height={100} />}</View>
       <View
         style={[
           {

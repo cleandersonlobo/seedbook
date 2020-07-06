@@ -1,0 +1,825 @@
+[
+  {
+    "pdfVersion": [],
+    "currentReaders": [],
+    "pastReaders": [],
+    "_id": "5f00cfbf12d0ebb26249bf8f",
+    "profile": {
+      "profile": [
+        4,
+        0,
+        1,
+        3,
+        1
+      ]
+    },
+    "name": "charlieFactory",
+    "title": "A Fantástica Fábrica de Chocolate",
+    "createdAt": "2020-07-04T18:51:43.816Z",
+    "updatedAt": "2020-07-05T22:37:53.678Z",
+    "__v": 0,
+    "cover": {
+      "_id": "5f00cf8112d0ebb26249bf8e",
+      "name": "p36068_v_v8_af",
+      "alternativeText": "",
+      "caption": "",
+      "hash": "p36068_v_v8_af_eadb406310",
+      "ext": ".jpeg",
+      "mime": "image/jpeg",
+      "size": 368.55,
+      "width": 960,
+      "height": 1440,
+      "url": "https://megahack3.s3.us-west-1.amazonaws.com/p36068_v_v8_af_eadb406310.jpeg",
+      "formats": {
+        "thumbnail": {
+          "hash": "thumbnail_p36068_v_v8_af_eadb406310",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 104,
+          "height": 156,
+          "size": 5.58,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/thumbnail_p36068_v_v8_af_eadb406310.jpeg"
+        },
+        "large": {
+          "hash": "large_p36068_v_v8_af_eadb406310",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 667,
+          "height": 1000,
+          "size": 158.15,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/large_p36068_v_v8_af_eadb406310.jpeg"
+        },
+        "medium": {
+          "hash": "medium_p36068_v_v8_af_eadb406310",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 500,
+          "height": 750,
+          "size": 85.59,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/medium_p36068_v_v8_af_eadb406310.jpeg"
+        },
+        "small": {
+          "hash": "small_p36068_v_v8_af_eadb406310",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 333,
+          "height": 500,
+          "size": 39.38,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/small_p36068_v_v8_af_eadb406310.jpeg"
+        }
+      },
+      "provider": "aws-s3",
+      "related": [
+        "5f00cfbf12d0ebb26249bf8f"
+      ],
+      "createdAt": "2020-07-04T18:50:41.577Z",
+      "updatedAt": "2020-07-05T18:05:45.148Z",
+      "__v": 0,
+      "id": "5f00cf8112d0ebb26249bf8e"
+    },
+    "ageRange": "2",
+    "blurb": "Quando Willy Wonka decide deixar cinco filhos em sua fábrica de chocolate, ele decide liberar cinco bilhetes de ouro em cinco barras de chocolate separadas, causando um caos completo. Charlie Bucket vem de uma família pobre e passa a maior parte do tempo sonhando com o chocolate que ele ama, mas geralmente não pode pagar.",
+    "id": "5f00cfbf12d0ebb26249bf8f"
+  },
+  {
+    "pdfVersion": [],
+    "currentReaders": [],
+    "pastReaders": [],
+    "_id": "5f00d56ff4dd8fb38741e651",
+    "profile": {
+      "profile": [
+        3,
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    "name": "garfield",
+    "title": "Garfield",
+    "ageRange": "2",
+    "createdAt": "2020-07-04T19:15:59.224Z",
+    "updatedAt": "2020-07-05T22:38:36.738Z",
+    "__v": 0,
+    "blurb": "Uma das tirinhas mais publicadas em jornal tem um gato como personagem principal. Irônico, preguiçoso e apaixonado por lasanha, Garfield é um gato que sempre debocha de seu dono, Jon. Um gato conhecido no mundo todo. Este gato laranja ganhou seu nome por uma homenagem",
+    "cover": {
+      "_id": "5f0216b9ad0b5c1ee5bcc614",
+      "name": "garfield",
+      "alternativeText": "",
+      "caption": "",
+      "hash": "garfield_53870de475",
+      "ext": ".jpeg",
+      "mime": "image/jpeg",
+      "size": 152.31,
+      "width": 1024,
+      "height": 1595,
+      "url": "https://megahack3.s3.us-west-1.amazonaws.com/garfield_53870de475.jpeg",
+      "formats": {
+        "thumbnail": {
+          "hash": "thumbnail_garfield_53870de475",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 100,
+          "height": 156,
+          "size": 5.8,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/thumbnail_garfield_53870de475.jpeg"
+        },
+        "large": {
+          "hash": "large_garfield_53870de475",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 642,
+          "height": 1000,
+          "size": 82.02,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/large_garfield_53870de475.jpeg"
+        },
+        "medium": {
+          "hash": "medium_garfield_53870de475",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 482,
+          "height": 750,
+          "size": 54.14,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/medium_garfield_53870de475.jpeg"
+        },
+        "small": {
+          "hash": "small_garfield_53870de475",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 321,
+          "height": 500,
+          "size": 31,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/small_garfield_53870de475.jpeg"
+        }
+      },
+      "provider": "aws-s3",
+      "related": [
+        "5f00d56ff4dd8fb38741e651"
+      ],
+      "createdAt": "2020-07-05T18:06:49.553Z",
+      "updatedAt": "2020-07-05T18:06:53.619Z",
+      "__v": 0,
+      "id": "5f0216b9ad0b5c1ee5bcc614"
+    },
+    "id": "5f00d56ff4dd8fb38741e651"
+  },
+  {
+    "pdfVersion": [],
+    "currentReaders": [],
+    "pastReaders": [],
+    "_id": "5f00e9aca9094208ba0eeb1e",
+    "profile": {
+      "profile": [
+        4,
+        0,
+        2,
+        3,
+        5
+      ]
+    },
+    "name": "narnia",
+    "title": "Nárnia",
+    "createdAt": "2020-07-04T20:42:20.092Z",
+    "updatedAt": "2020-07-05T22:39:31.291Z",
+    "__v": 0,
+    "cover": {
+      "_id": "5f00e924a9094208ba0eeb1b",
+      "name": "narnia",
+      "alternativeText": "",
+      "caption": "",
+      "hash": "narnia_962b341d80",
+      "ext": ".jpeg",
+      "mime": "image/jpeg",
+      "size": 715.19,
+      "width": 1400,
+      "height": 2100,
+      "url": "https://megahack3.s3.us-west-1.amazonaws.com/narnia_962b341d80.jpeg",
+      "formats": {
+        "thumbnail": {
+          "hash": "thumbnail_narnia_962b341d80",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 104,
+          "height": 156,
+          "size": 5.58,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/thumbnail_narnia_962b341d80.jpeg"
+        },
+        "large": {
+          "hash": "large_narnia_962b341d80",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 667,
+          "height": 1000,
+          "size": 173.24,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/large_narnia_962b341d80.jpeg"
+        },
+        "medium": {
+          "hash": "medium_narnia_962b341d80",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 500,
+          "height": 750,
+          "size": 101.95,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/medium_narnia_962b341d80.jpeg"
+        },
+        "small": {
+          "hash": "small_narnia_962b341d80",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 333,
+          "height": 500,
+          "size": 45.38,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/small_narnia_962b341d80.jpeg"
+        }
+      },
+      "provider": "aws-s3",
+      "related": [
+        "5f00e9aca9094208ba0eeb1e"
+      ],
+      "createdAt": "2020-07-04T20:40:04.819Z",
+      "updatedAt": "2020-07-05T18:07:19.549Z",
+      "__v": 0,
+      "id": "5f00e924a9094208ba0eeb1b"
+    },
+    "ageRange": "2",
+    "blurb": "Nárnia é um mundo plano e geocêntrico, ao contrário do nosso, conforme é narrado em A Viagem do Peregrino da Alvorada. No limiar do mundo de Nárnia, o oceano tem água doce, é coberto por flores, e o céu encontra o mar. Além do mais, no extremo leste deste oceano está o País de Aslam.\n\nO solo é uma camada morta como a pele que recobre o nosso corpo, mas no interior da terra, as rochas também são criaturas vivas como é relatado em A Cadeira de Prata.\n\nO céu é habitado pelas estrelas, que também são vivas e realizam danças que os sábios podem interpretar para fazer predições sobre a chegada de Aslam e outros acontecimentos.\n\nO sol é um disco em chamas que dá a volta em torno do mundo de Nárnia uma vez a cada dia. É no sol que estão as flores de fogo, cujo extrato compõe o líquido do frasco de diamante entregue ",
+    "id": "5f00e9aca9094208ba0eeb1e"
+  },
+  {
+    "pdfVersion": [],
+    "currentReaders": [],
+    "pastReaders": [],
+    "_id": "5f00ea5aa9094208ba0eeb21",
+    "profile": {
+      "profile": [
+        4,
+        2,
+        3,
+        3,
+        5
+      ]
+    },
+    "name": "alice",
+    "title": "Alice no País das Maravilhas",
+    "createdAt": "2020-07-04T20:45:14.216Z",
+    "updatedAt": "2020-07-05T22:39:57.886Z",
+    "__v": 0,
+    "cover": {
+      "_id": "5f00ea37a9094208ba0eeb20",
+      "name": "alice",
+      "alternativeText": "",
+      "caption": "",
+      "hash": "alice_03a3007358",
+      "ext": ".jpeg",
+      "mime": "image/jpeg",
+      "size": 182.34,
+      "width": 820,
+      "height": 1257,
+      "url": "https://megahack3.s3.us-west-1.amazonaws.com/alice_03a3007358.jpeg",
+      "formats": {
+        "thumbnail": {
+          "hash": "thumbnail_alice_03a3007358",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 102,
+          "height": 156,
+          "size": 6.84,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/thumbnail_alice_03a3007358.jpeg"
+        },
+        "large": {
+          "hash": "large_alice_03a3007358",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 652,
+          "height": 1000,
+          "size": 136.31,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/large_alice_03a3007358.jpeg"
+        },
+        "medium": {
+          "hash": "medium_alice_03a3007358",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 489,
+          "height": 750,
+          "size": 89.42,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/medium_alice_03a3007358.jpeg"
+        },
+        "small": {
+          "hash": "small_alice_03a3007358",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 326,
+          "height": 500,
+          "size": 46.97,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/small_alice_03a3007358.jpeg"
+        }
+      },
+      "provider": "aws-s3",
+      "related": [
+        "5f00ea5aa9094208ba0eeb21"
+      ],
+      "createdAt": "2020-07-04T20:44:39.908Z",
+      "updatedAt": "2020-07-05T18:07:37.854Z",
+      "__v": 0,
+      "id": "5f00ea37a9094208ba0eeb20"
+    },
+    "ageRange": "2",
+    "blurb": "Uma jovem garota chamada Alice faz duas viagens notáveis onde nada é o que parece - e os personagens mais incomuns podem ser encontrados. As coisas ficam cada vez mais curiosas quando Alice cai de um buraco de coelho. Ela encolhe e cresce, recebe instruções de um gato sorridente, participa de uma louca festa do chá e joga um extraordinário jogo de croquet. Então, depois de passar pelo espelho. Alice tem muitas outras experiências peculiares, incluindo uma conversa com um ovo gigante chamado Humpty Dumpty e um encontro com dois irmãos estranhos, Tweedledum e Tweedledee. Espere o inesperado nessas histórias incríveis.",
+    "id": "5f00ea5aa9094208ba0eeb21"
+  },
+  {
+    "pdfVersion": [],
+    "currentReaders": [],
+    "pastReaders": [],
+    "_id": "5f00eac5a9094208ba0eeb23",
+    "profile": {
+      "profile": [
+        2,
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    "name": "principe",
+    "title": "O Pequeno Príncipe",
+    "createdAt": "2020-07-04T20:47:01.148Z",
+    "updatedAt": "2020-07-05T22:40:37.235Z",
+    "__v": 0,
+    "ageRange": "2",
+    "blurb": "O Pequeno Príncipe - originalmente em francês, Le Petit Prince - é um conto encantador sobre o encontro casual de um aviador com um menino que por acaso visita a Terra de outro planeta. O aviador cai no deserto do Saara e danifica seu avião até o ponto em que ele não pode mais voar.",
+    "cover": {
+      "_id": "5f021718ad0b5c1ee5bcc618",
+      "name": "principe",
+      "alternativeText": "",
+      "caption": "",
+      "hash": "principe_462874735c",
+      "ext": ".jpeg",
+      "mime": "image/jpeg",
+      "size": 242.31,
+      "width": 1833,
+      "height": 2560,
+      "url": "https://megahack3.s3.us-west-1.amazonaws.com/principe_462874735c.jpeg",
+      "formats": {
+        "thumbnail": {
+          "hash": "thumbnail_principe_462874735c",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 112,
+          "height": 156,
+          "size": 4.07,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/thumbnail_principe_462874735c.jpeg"
+        },
+        "large": {
+          "hash": "large_principe_462874735c",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 716,
+          "height": 1000,
+          "size": 64.01,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/large_principe_462874735c.jpeg"
+        },
+        "medium": {
+          "hash": "medium_principe_462874735c",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 537,
+          "height": 750,
+          "size": 41.91,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/medium_principe_462874735c.jpeg"
+        },
+        "small": {
+          "hash": "small_principe_462874735c",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 358,
+          "height": 500,
+          "size": 22.75,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/small_principe_462874735c.jpeg"
+        }
+      },
+      "provider": "aws-s3",
+      "related": [
+        "5f00eac5a9094208ba0eeb23"
+      ],
+      "createdAt": "2020-07-05T18:08:24.439Z",
+      "updatedAt": "2020-07-05T18:08:32.741Z",
+      "__v": 0,
+      "id": "5f021718ad0b5c1ee5bcc618"
+    },
+    "id": "5f00eac5a9094208ba0eeb23"
+  },
+  {
+    "pdfVersion": [],
+    "currentReaders": [],
+    "pastReaders": [],
+    "_id": "5f00ec69a9094208ba0eeb25",
+    "profile": {
+      "profile": [
+        2,
+        0,
+        0,
+        3,
+        3
+      ]
+    },
+    "name": "largatinha",
+    "title": "A Largatinha Muito Comilona",
+    "createdAt": "2020-07-04T20:54:01.261Z",
+    "updatedAt": "2020-07-05T22:41:18.996Z",
+    "__v": 0,
+    "cover": {
+      "_id": "5f00ec52a9094208ba0eeb24",
+      "name": "largatinha",
+      "alternativeText": "",
+      "caption": "",
+      "hash": "largatinha_fa64fceb35",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 2218.5,
+      "width": 1394,
+      "height": 984,
+      "url": "https://megahack3.s3.us-west-1.amazonaws.com/largatinha_fa64fceb35.png",
+      "formats": {
+        "thumbnail": {
+          "hash": "thumbnail_largatinha_fa64fceb35",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 221,
+          "height": 156,
+          "size": 68.91,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/thumbnail_largatinha_fa64fceb35.png"
+        },
+        "large": {
+          "hash": "large_largatinha_fa64fceb35",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 1000,
+          "height": 706,
+          "size": 1237.98,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/large_largatinha_fa64fceb35.png"
+        },
+        "medium": {
+          "hash": "medium_largatinha_fa64fceb35",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 750,
+          "height": 529,
+          "size": 716.73,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/medium_largatinha_fa64fceb35.png"
+        },
+        "small": {
+          "hash": "small_largatinha_fa64fceb35",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 500,
+          "height": 353,
+          "size": 328.09,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/small_largatinha_fa64fceb35.png"
+        }
+      },
+      "provider": "aws-s3",
+      "related": [
+        "5f00ec69a9094208ba0eeb25"
+      ],
+      "createdAt": "2020-07-04T20:53:38.434Z",
+      "updatedAt": "2020-07-05T18:08:47.926Z",
+      "__v": 0,
+      "id": "5f00ec52a9094208ba0eeb24"
+    },
+    "ageRange": "2",
+    "blurb": "Uma pequena lagarta emerge de um ovo e começa a comer tudo à vista. Finalmente, não está mais com fome e não é mais pequeno. A lagarta grande e gorda constrói um casulo ao seu redor e finalmente surge como uma linda borboleta.",
+    "id": "5f00ec69a9094208ba0eeb25"
+  },
+  {
+    "pdfVersion": [],
+    "currentReaders": [],
+    "pastReaders": [],
+    "_id": "5f00eda2a9094208ba0eeb28",
+    "profile": {
+      "profile": [
+        2,
+        1,
+        1,
+        3,
+        1
+      ]
+    },
+    "name": "monstros",
+    "title": "Onde Os Monstros Vivem",
+    "createdAt": "2020-07-04T20:59:14.294Z",
+    "updatedAt": "2020-07-05T22:41:42.683Z",
+    "__v": 0,
+    "cover": {
+      "_id": "5f00ed0ea9094208ba0eeb27",
+      "name": "monstros",
+      "alternativeText": "",
+      "caption": "",
+      "hash": "monstros_892efb3583",
+      "ext": ".jpeg",
+      "mime": "image/jpeg",
+      "size": 74.13,
+      "width": 500,
+      "height": 447,
+      "url": "https://megahack3.s3.us-west-1.amazonaws.com/monstros_892efb3583.jpeg",
+      "formats": {
+        "thumbnail": {
+          "hash": "thumbnail_monstros_892efb3583",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 174,
+          "height": 156,
+          "size": 8.91,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/thumbnail_monstros_892efb3583.jpeg"
+        }
+      },
+      "provider": "aws-s3",
+      "related": [
+        "5f00eda2a9094208ba0eeb28"
+      ],
+      "createdAt": "2020-07-04T20:56:46.042Z",
+      "updatedAt": "2020-07-05T18:09:01.417Z",
+      "__v": 0,
+      "id": "5f00ed0ea9094208ba0eeb27"
+    },
+    "ageRange": "2",
+    "blurb": "Onde os Monstros Vivem de Maurice Sendak, é a história de um menino e personagem principal da história, chamada Max. Depois que sua mãe o manda para a cama sem jantar, Max adormece e seu quarto imediatamente se transforma em uma floresta iluminada pela lua, cercada por um vasto oceano.",
+    "id": "5f00eda2a9094208ba0eeb28"
+  },
+  {
+    "pdfVersion": [],
+    "currentReaders": [],
+    "pastReaders": [],
+    "_id": "5f00ee4fa9094208ba0eeb2b",
+    "profile": {
+      "profile": [
+        4,
+        0,
+        2,
+        3,
+        2
+      ]
+    },
+    "name": "peter",
+    "title": "Peter Pan",
+    "createdAt": "2020-07-04T21:02:07.581Z",
+    "updatedAt": "2020-07-05T22:42:18.886Z",
+    "__v": 0,
+    "cover": {
+      "_id": "5f00edf0a9094208ba0eeb2a",
+      "name": "peter",
+      "alternativeText": "",
+      "caption": "",
+      "hash": "peter_dd97c69412",
+      "ext": ".jpeg",
+      "mime": "image/jpeg",
+      "size": 194.41,
+      "width": 1000,
+      "height": 1426,
+      "url": "https://megahack3.s3.us-west-1.amazonaws.com/peter_dd97c69412.jpeg",
+      "formats": {
+        "thumbnail": {
+          "hash": "thumbnail_peter_dd97c69412",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 109,
+          "height": 156,
+          "size": 6.4,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/thumbnail_peter_dd97c69412.jpeg"
+        },
+        "large": {
+          "hash": "large_peter_dd97c69412",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 701,
+          "height": 1000,
+          "size": 111.38,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/large_peter_dd97c69412.jpeg"
+        },
+        "medium": {
+          "hash": "medium_peter_dd97c69412",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 526,
+          "height": 750,
+          "size": 72.25,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/medium_peter_dd97c69412.jpeg"
+        },
+        "small": {
+          "hash": "small_peter_dd97c69412",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 351,
+          "height": 500,
+          "size": 39.1,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/small_peter_dd97c69412.jpeg"
+        }
+      },
+      "provider": "aws-s3",
+      "related": [
+        "5f00ee4fa9094208ba0eeb2b"
+      ],
+      "createdAt": "2020-07-04T21:00:32.269Z",
+      "updatedAt": "2020-07-05T18:09:18.333Z",
+      "__v": 0,
+      "id": "5f00edf0a9094208ba0eeb2a"
+    },
+    "ageRange": "2",
+    "blurb": "Toda criança conhece o caminho para Neverland, o mundo mágico de Peter Pan e seu ciumento amigo de fadas, Tinker Bell. Peter Pan é o que incomoda obviamente as crianças Darling. Wendy, John e Michael, para sair e voar para Neverland. Lá eles encontram os tristes Garotos Perdidos, os índios, o pássaro Nunca e, é claro, o temido Capitão Hook - e o crocodilo determinado a engoli-lo inteiro.",
+    "id": "5f00ee4fa9094208ba0eeb2b"
+  },
+  {
+    "pdfVersion": [],
+    "currentReaders": [],
+    "pastReaders": [],
+    "_id": "5f00ef36a9094208ba0eeb2e",
+    "profile": {
+      "profile": [
+        1,
+        1,
+        0,
+        2,
+        1
+      ]
+    },
+    "name": "maluquinho",
+    "title": "O Menino Maluquinho",
+    "createdAt": "2020-07-04T21:05:58.880Z",
+    "updatedAt": "2020-07-05T22:43:09.696Z",
+    "__v": 0,
+    "cover": {
+      "_id": "5f00ef11a9094208ba0eeb2d",
+      "name": "maluquinho",
+      "alternativeText": "",
+      "caption": "",
+      "hash": "maluquinho_8c4af54d2f",
+      "ext": ".jpeg",
+      "mime": "image/jpeg",
+      "size": 98.37,
+      "width": 630,
+      "height": 935,
+      "url": "https://megahack3.s3.us-west-1.amazonaws.com/maluquinho_8c4af54d2f.jpeg",
+      "formats": {
+        "thumbnail": {
+          "hash": "thumbnail_maluquinho_8c4af54d2f",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 105,
+          "height": 156,
+          "size": 5.68,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/thumbnail_maluquinho_8c4af54d2f.jpeg"
+        },
+        "medium": {
+          "hash": "medium_maluquinho_8c4af54d2f",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 505,
+          "height": 750,
+          "size": 68.05,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/medium_maluquinho_8c4af54d2f.jpeg"
+        },
+        "small": {
+          "hash": "small_maluquinho_8c4af54d2f",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 337,
+          "height": 500,
+          "size": 37.09,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/small_maluquinho_8c4af54d2f.jpeg"
+        }
+      },
+      "provider": "aws-s3",
+      "related": [
+        "5f00ef36a9094208ba0eeb2e"
+      ],
+      "createdAt": "2020-07-04T21:05:21.090Z",
+      "updatedAt": "2020-07-05T18:09:33.539Z",
+      "__v": 0,
+      "id": "5f00ef11a9094208ba0eeb2d"
+    },
+    "ageRange": "2",
+    "blurb": "Na grande obra infantil de Ziraldo, verso e desenho contam a história de um menino traquinas que aprontava muita confusão. Alegria da casa, liderava a garotada, era sabido e um amigão. Fazia versinhos, canções, inventava brincadeiras. Tirava dez em todas as matérias, mas era zero em comportamento. Menino maluquinho, diziam. Mas na verdade ele era um menino feliz.",
+    "id": "5f00ef36a9094208ba0eeb2e"
+  },
+  {
+    "pdfVersion": [],
+    "currentReaders": [],
+    "pastReaders": [],
+    "_id": "5f00f020a9094208ba0eeb31",
+    "profile": {
+      "profile": [
+        2,
+        2,
+        1,
+        0,
+        3
+      ]
+    },
+    "name": "chapeuzinho",
+    "title": "Chapeuzinho Vermelho",
+    "createdAt": "2020-07-04T21:09:52.275Z",
+    "updatedAt": "2020-07-05T22:44:01.281Z",
+    "__v": 0,
+    "cover": {
+      "_id": "5f00efd0a9094208ba0eeb30",
+      "name": "chapeuzinho",
+      "alternativeText": "",
+      "caption": "",
+      "hash": "chapeuzinho_1b3b079265",
+      "ext": ".jpeg",
+      "mime": "image/jpeg",
+      "size": 70.25,
+      "width": 660,
+      "height": 660,
+      "url": "https://megahack3.s3.us-west-1.amazonaws.com/chapeuzinho_1b3b079265.jpeg",
+      "formats": {
+        "thumbnail": {
+          "hash": "thumbnail_chapeuzinho_1b3b079265",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 156,
+          "height": 156,
+          "size": 7.12,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/thumbnail_chapeuzinho_1b3b079265.jpeg"
+        },
+        "small": {
+          "hash": "small_chapeuzinho_1b3b079265",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 500,
+          "height": 500,
+          "size": 46.68,
+          "path": null,
+          "url": "https://megahack3.s3.us-west-1.amazonaws.com/small_chapeuzinho_1b3b079265.jpeg"
+        }
+      },
+      "provider": "aws-s3",
+      "related": [
+        "5f00f020a9094208ba0eeb31"
+      ],
+      "createdAt": "2020-07-04T21:08:32.594Z",
+      "updatedAt": "2020-07-05T18:09:47.232Z",
+      "__v": 0,
+      "id": "5f00efd0a9094208ba0eeb30"
+    },
+    "ageRange": "2",
+    "blurb": "Em uma linda tarde de outono, o chapeuzinho vermelho é enviado por sua mãe para levar alguns presentes para a vovó. Ela repara no caminho, mas fica cansada e senta-se para descansar debaixo de uma árvore. Ela para e sonha com a conhecida história: como um lobo disfarçado de um cachorro amigável veio e perguntou a ela para onde estava indo.",
+    "id": "5f00f020a9094208ba0eeb31"
+  },
+  {
+    "pdfVersion": [],
+    "currentReaders": [],
+    "pastReaders": [],
+    "_id": "5f00f117a9094208ba0eeb34",
+    "profile": {
+      "profile": [
+        3,
+        0,
+        3,
+        5,
+        5
+      ]
+    },
+    "name": "lorax",
+    "title": "O Lórax",
+    "createdAt": "2020-07-04T21:13:59.055Z",
+    "updatedAt": "2020-07-05T22:44:41.804Z",
+    "__v": 0,
+    "cover": null,
+    "ageRange": "2",
+    "id": "5f00f117a9094208ba0eeb34"
+  }
+]

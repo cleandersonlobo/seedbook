@@ -48,7 +48,7 @@ export const light: DefaultTheme = {
     white: '#ffffff',
     background: '#ffffff',
     dark: '#3D3F3E',
-    light: '#f5f5f5',
+    light: '#F2F2F2',
     text: {
       dark: '#3D3F3E',
       light: '#ffffff',

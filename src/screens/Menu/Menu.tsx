@@ -31,8 +31,8 @@ const Menu: React.FC = () => {
           </View>
           <View style={{ paddingHorizontal: 40 }}>
             <Description>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut
-              fringilla orci viverra nullam leo at eleifend turpis.
+              Uma nova forma de ler e escrever, onde a regra é sem limites para
+              imaginação.
             </Description>
           </View>
           <View>
