@@ -74,6 +74,14 @@ const RouteStack: React.FC = () => {
         }}
       />
       <MainStack.Screen
+        name="Curadoria"
+        component={WriteBook}
+        options={{
+          headerShown: false,
+          transitionSpec,
+        }}
+      />
+      <MainStack.Screen
         name="Loja"
         component={Storage}
         options={{

@@ -45,7 +45,7 @@ const Menu: React.FC = () => {
             <Button
               text="OPÇÕES"
               color="blue"
-              onPress={() => handleNavigate('Profile')}
+              onPress={() => handleNavigate('Home')}
             />
             <Button
               text="LOJA"

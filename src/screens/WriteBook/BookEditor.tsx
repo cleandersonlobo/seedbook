@@ -1,9 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
 import { Container, gloablStyles } from 'styles';
-
-import { FlatList } from 'react-native-gesture-handler';
-import { NumberPage, WordButton, WordButtonText, Input } from './styles';
+import { NumberPage, Input } from './styles';
+import WordBank from './WordBank';
 
 const BookEditor: React.FC = () => {
   return (
@@ -48,39 +47,7 @@ const BookEditor: React.FC = () => {
             multiline
           />
         </View>
-        <View style={{ flex: 0 }}>
-          <FlatList
-            data={[
-              'uma',
-              'sábia',
-              'vez',
-              'menino',
-              'lindo',
-              'muito',
-              'era',
-              'vez',
-              'bela',
-              'lindo',
-              'uma',
-              'sábia',
-              'falava',
-              'gostava',
-              'lindo',
-            ]}
-            horizontal
-            contentContainerStyle={{
-              maxWidth: 500,
-              flexWrap: 'wrap',
-            }}
-            keyExtractor={(item, index) => `${index}_${item}`}
-            ItemSeparatorComponent={() => <View style={{ width: 10 }} />}
-            renderItem={({ item }) => (
-              <WordButton style={{ marginBottom: 10 }}>
-                <WordButtonText>{item}</WordButtonText>
-              </WordButton>
-            )}
-          />
-        </View>
+        <WordBank />
       </View>
     </Container>
   );
