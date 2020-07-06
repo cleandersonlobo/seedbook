@@ -63,7 +63,8 @@ export const useMenuIconSvg = ({
     setLoading(true);
     const importIcon = async (): Promise<void> => {
       try {
-        const { default: namedImport } = await SVGIconsMenus[name];
+        const { default: namedImport } =
+          (await SVGIconsMenus[name]) || PersonagenIcons[name];
         ImportedIconRef.current = namedImport;
       } catch (err) {
         throw err;

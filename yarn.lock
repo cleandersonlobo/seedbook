@@ -1358,6 +1358,10 @@
   resolved "https://registry.yarnpkg.com/@terrylinla/react-native-sketch-canvas/-/react-native-sketch-canvas-0.8.0.tgz#3d3aa4ce2afb71bac2fbd512889e292d3265b264"
   integrity sha512-rWLZkvYbbQ2Pje8AyT7+8nunXRNaOjfpJTYUHfUH1EVvRs+Es0rJlqoS1UmQbhKCXIra8xiBBD1jHs10S//mxg==
 
+"@terrylinla/react-native-sketch-canvas@https://github.com/cleandersonlobo/react-native-sketch-canvas":
+  version "0.8.0"
+  resolved "https://github.com/cleandersonlobo/react-native-sketch-canvas#587eb44a875419389473f2a6c6ac32f3be866b41"
+
 "@types/axios@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@types/axios/-/axios-0.14.0.tgz#ec2300fbe7d7dddd7eb9d3abf87999964cafce46"

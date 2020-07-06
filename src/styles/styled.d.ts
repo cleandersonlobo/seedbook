@@ -67,6 +67,7 @@ declare module 'styled-components' {
       medium: number;
       small: number;
       tiny: number;
+      xtiny: number;
     };
   }
 }

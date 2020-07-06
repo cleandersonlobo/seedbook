@@ -11,6 +11,7 @@ import WriteBook from 'screens/WriteBook/WriteBook';
 import { transitionSpec } from 'helpers/utils';
 import Storage from 'screens/Storage/Storage';
 import SearchBooks from 'screens/SearchBooks/SearchBooks';
+import Achievements from 'screens/Achievements/Achievements';
 
 const MainStack = createStackNavigator();
 
@@ -44,6 +45,14 @@ const RouteStack: React.FC = () => {
       <MainStack.Screen
         name="Profile"
         component={Profile}
+        options={{
+          headerShown: false,
+          transitionSpec,
+        }}
+      />
+      <MainStack.Screen
+        name="Conquistas"
+        component={Achievements}
         options={{
           headerShown: false,
           transitionSpec,

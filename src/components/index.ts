@@ -11,3 +11,4 @@ export { default as BottomTabNavigation } from './BottomTabNavigation/BottomTabN
 export { default as HeaderDetailsUser } from './HeaderDetailsUser/HeaderDetailsUser';
 export { default as Loading } from './Loading/Loading';
 export { default as LoadingOverlay } from './LoadingOverlay/LoadingOverlay';
+export { default as CardAchivements } from './CardAchivements/CardAchivements';
