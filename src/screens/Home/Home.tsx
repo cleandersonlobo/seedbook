@@ -4,17 +4,24 @@ import { View, ScrollView } from 'react-native';
 import { CharacterButton, CardMenu, BottomMascoteBar } from 'components';
 import IconDollar from 'assets/svg/dollar.svg';
 import { AlunoContext } from 'contexts';
+import { useHandleNavigation } from 'hooks';
 import { Description, CoinsText } from './styles';
 
 const Home: React.FC = () => {
   const { profilepicture, usuario } = useContext(AlunoContext);
+  const [handleNavigate] = useHandleNavigation('Profile');
   return (
     <>
       <SafeAreaContainer>
         <ScrollView>
           <Container>
             <View style={[gloablStyles.alignCenter, { marginVertical: 20 }]}>
-              <CharacterButton btnSize={47} size={30} name={profilepicture} />
+              <CharacterButton
+                btnSize={47}
+                size={30}
+                name={profilepicture}
+                onPress={handleNavigate}
+              />
               <Description>{usuario}</Description>
             </View>
             <CardMenu
