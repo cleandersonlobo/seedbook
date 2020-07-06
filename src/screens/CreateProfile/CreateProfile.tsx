@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useContext } from 'react';
+import React, { useState, useCallback, useContext, useEffect } from 'react';
 import { FlatList, Alert } from 'react-native';
 import { SafeAreaContainer } from 'styles';
 import { BottomTabNavigation, LoadingOverlay } from 'components';
@@ -10,10 +10,14 @@ import { useNavigation } from '@react-navigation/native';
 import Header from './Header';
 import Footer from './Footer';
 
-const CardButton = React.lazy(() => import('components/CardButton/CardButton'));
+let CardButton = React.lazy(() => import('components/CardButton/CardButton'));
 const CreateProfile: React.FC = () => {
   const { id: kidId } = useContext(AlunoContext);
-
+  useEffect(() => {
+    return () => {
+      CardButton = React.lazy(() => import('components/CardButton/CardButton'));
+    };
+  }, []);
   const [cards, setCard] = useState({});
   const [loading, setLoading] = useState(false);
   const navigation = useNavigation();
