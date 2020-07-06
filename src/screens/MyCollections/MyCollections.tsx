@@ -5,6 +5,7 @@ import { HeaderDetailsUser, BottomTabNavigation } from 'components';
 import BackgroundSVG from 'assets/svg/background_form.svg';
 import dimensions from 'styles/dimensions';
 import LivrosMock from 'data/livros.json';
+import { useHandleNavigation } from 'hooks';
 import PHBooksPanel from './PHBooksPanel';
 
 let BooksPanel = React.lazy(() => import('./BooksPanel'));
@@ -15,6 +16,8 @@ const MyCollections: React.FC = () => {
       BooksPanel = React.lazy(() => import('./BooksPanel'));
     };
   });
+  const [handleNavigateEditora] = useHandleNavigation('Editora');
+  const [handleNavigateSearch] = useHandleNavigation('Pesquisar');
   return (
     <>
       <SafeAreaContainer>
@@ -34,6 +37,7 @@ const MyCollections: React.FC = () => {
                 color="purple"
                 books={LivrosMock}
                 title="Livros que eu escrevi:"
+                actionPress={handleNavigateEditora}
               />
             </React.Suspense>
             <React.Suspense fallback={<PHBooksPanel color="blue" />}>
@@ -42,6 +46,7 @@ const MyCollections: React.FC = () => {
                 books={LivrosMock}
                 buttonType="find"
                 title="Livros dos meus amigos:"
+                actionPress={handleNavigateSearch}
               />
             </React.Suspense>
             <React.Suspense fallback={<PHBooksPanel color="green" />}>
@@ -50,6 +55,7 @@ const MyCollections: React.FC = () => {
                 books={LivrosMock}
                 buttonType="find"
                 title="Árvore de livros:"
+                actionPress={handleNavigateSearch}
               />
             </React.Suspense>
           </Container>

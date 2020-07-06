@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React, { useEffect } from 'react';
 import { CardBooks, CardBooksTitle, CardBooksBody } from 'styles';
 import { ButtonAddBook, ButtonFindBook } from 'components';
@@ -9,6 +10,7 @@ interface Props {
   buttonType?: string;
   title: string;
   books?: any;
+  actionPress?: () => void;
 }
 
 const BooksPanel: React.FC<Props> = ({
@@ -16,6 +18,7 @@ const BooksPanel: React.FC<Props> = ({
   title,
   books,
   buttonType = 'add',
+  actionPress,
 }) => {
   useEffect(() => {
     return () => {
@@ -35,8 +38,8 @@ const BooksPanel: React.FC<Props> = ({
         ))}
         {
           {
-            add: <ButtonAddBook color={color} />,
-            find: <ButtonFindBook color={color} />,
+            add: <ButtonAddBook color={color} onPress={actionPress} />,
+            find: <ButtonFindBook color={color} onPress={actionPress} />,
           }[buttonType]
         }
       </CardBooksBody>
