@@ -38,4 +38,5 @@ export const Input = styled.TextInput`
   font-size: ${props => props.theme.fontSize.medium}px;
   border: 1px solid #333333;
   border-radius: 20px;
+  color: ${props => props.theme.colors.text.dark};
 `;
