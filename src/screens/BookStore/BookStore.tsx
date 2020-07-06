@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { SafeAreaContainer, Container, gloablStyles } from 'styles';
-import AlunoMock from 'data/aluno.json';
-import { View, ScrollView } from 'react-native';
+import { View, ScrollView, Linking, Platform } from 'react-native';
 import { CharacterButton, CardMenu, BottomMascoteBar } from 'components';
 import IconDollar from 'assets/svg/dollar.svg';
 import { useHandleNavigation } from 'hooks';
+import { AlunoContext } from 'contexts';
 import { Description, CoinsText } from './styles';
 
 const BookStore: React.FC = () => {
   const [handleOnNavigate] = useHandleNavigation('Profile');
-  const { profilepicture, usuario } = AlunoMock;
-
+  const { profilepicture, usuario } = useContext(AlunoContext);
+  function handleOpenArvore(): void {
+    Platform.select({
+      ios: Linking.openURL(
+        'https://apps.apple.com/br/app/arvore-de-livros/id1094879125',
+      ),
+      android: Linking.openURL(
+        'market://details?id=arvoredelivros.com.br.arvore',
+      ),
+    });
+  }
   return (
     <>
       <SafeAreaContainer>
@@ -46,6 +55,7 @@ const BookStore: React.FC = () => {
               textSizes={{ title: 'large', subtitle: 'medium' }}
               icon="arvore"
               title="Árvore"
+              onPress={handleOpenArvore}
               iconSize={110}
               subtitle="Aqui tem mais de 30 mil lívros para você escolher."
             />

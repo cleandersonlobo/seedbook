@@ -35,9 +35,9 @@ const CardMenu: React.FC<Props> = ({
   return (
     <Content
       color={color}
-      {...btnProps}
-      customColor={customColor}
       onPress={handleNavigate}
+      customColor={customColor}
+      {...btnProps}
     >
       <View style={{ flex: 1 }}>
         <Title color={textColor} fontSize={textSizes.title}>
