@@ -81,6 +81,7 @@ const RouteStack: React.FC = () => {
         options={{
           headerShown: false,
           transitionSpec,
+          gestureEnabled: false,
         }}
       />
       <MainStack.Screen
@@ -89,6 +90,7 @@ const RouteStack: React.FC = () => {
         options={{
           headerShown: false,
           transitionSpec,
+          gestureEnabled: false,
         }}
       />
       <MainStack.Screen
