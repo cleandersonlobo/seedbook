@@ -23,13 +23,13 @@ const App: React.FC = () => {
           <StatusBar barStyle="dark-content" />
         )}
 
-        <React.Suspense fallback={<Loading />}>
-          <NavigationContainer>
-            <SafeProvider>
+        <NavigationContainer>
+          <SafeProvider>
+            <React.Suspense fallback={<Loading />}>
               <Routes />
-            </SafeProvider>
-          </NavigationContainer>
-        </React.Suspense>
+            </React.Suspense>
+          </SafeProvider>
+        </NavigationContainer>
       </ThemeProvider>
     </ThemeModeContext.Provider>
   );
