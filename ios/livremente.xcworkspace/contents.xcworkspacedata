@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:livremente.xcodeproj">
+      location = "group:/Users/cleandersonlobo/Projetos - Apps/livremente/ios/seedbook.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
