@@ -42,10 +42,14 @@ const Canvas: React.FC = () => {
         >
           <IconPaint />
         </TouchableOpacity>
-        <SketchCanvas style={{ flex: 1 }} strokeColor="red" strokeWidth={7} />
+        <SketchCanvas
+          style={{ flex: 1 }}
+          strokeColor="purple"
+          strokeWidth={7}
+        />
       </View>
     </>
   );
 };
 
-export default Canvas;
+export default React.memo(Canvas);
