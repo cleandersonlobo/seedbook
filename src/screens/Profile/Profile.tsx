@@ -82,7 +82,7 @@ const Profile: React.FC = () => {
           </Container>
         </ScrollView>
       </SafeAreaContainer>
-      <BottomTabNavigation />
+      <BottomTabNavigation rightOnPress={handleOnNavigate} />
     </>
   );
 };

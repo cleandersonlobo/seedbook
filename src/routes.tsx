@@ -33,16 +33,16 @@ const RouteStack: React.FC = () => {
         }}
       />
       <MainStack.Screen
-        name="Profile"
-        component={Profile}
+        name="Home"
+        component={Home}
         options={{
           headerShown: false,
           transitionSpec,
         }}
       />
       <MainStack.Screen
-        name="Home"
-        component={Home}
+        name="Profile"
+        component={Profile}
         options={{
           headerShown: false,
           transitionSpec,
