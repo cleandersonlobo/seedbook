@@ -1,7 +1,7 @@
 # seedbook
 <p align="center">
   <a href="https://github.com/cleandersonlobo/seedbook/">
-    <img src="./images/icon_seedbook.jpg" alt="Logo" width=120 height=120>
+    <img src="./images/Icon_seedbook.jpg" alt="Logo" width=120 height=120>
   </a>
 </p>
   <h2 align="center">
