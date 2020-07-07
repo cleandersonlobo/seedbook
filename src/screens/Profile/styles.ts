@@ -55,7 +55,7 @@ export const UsuarioText = styled.Text<PText>`
 
 export const Title = styled.Text<PText>`
   font-size: ${props => props.theme.fontSize[props.size || 'small']}px;
-  color: ${props => props.theme.colors.dark}
+  color: ${props => props.theme.colors.text.dark};
   text-align: center;
   margin-bottom: 10px;
 `;

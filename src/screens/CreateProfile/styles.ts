@@ -20,4 +20,5 @@ export const Description = styled.Text<PText>`
   font-size: ${props => props.theme.fontSize[props.size || 'small']}px;
   line-height: ${props => props.theme.fontSize.large}px;
   text-align: center;
+  color: ${props => props.theme.colors.text.dark};
 `;
