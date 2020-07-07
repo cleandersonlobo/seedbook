@@ -31,6 +31,5 @@ export const createRows = (data: T[], columns: number): T[] => {
     });
     lastRowElements += 1; // [E]
   }
-  console.tron(data);
   return data; // [F]
 };
