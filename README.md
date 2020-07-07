@@ -12,7 +12,12 @@
   </p>
 
 <p align="center">
-  <a href="https://youtu.be/lx43uIKz6qo"> Demo App
+  <a href="https://youtu.be/lx43uIKz6qo"> Video - Demo App
+  <p>
+</p>
+
+<p align="center">
+  <a href="https://testflight.apple.com/join/vJ2ulykv"> TestFlight - iOS
   <p>
 </p>
 
