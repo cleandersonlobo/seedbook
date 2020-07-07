@@ -41,13 +41,8 @@ const Menu: React.FC = () => {
           value={isDark}
         />
       </View>
-      <ScrollView
-        contentContainerStyle={{
-          justifyContent: 'center',
-          flex: 1,
-        }}
-      >
-        <Container>
+      <ScrollView>
+        <Container style={{ flex: 1 }}>
           <View style={{ justifyContent: 'center', alignItems: 'center' }}>
             <MascoteLogo
               fillMain="#A55FEE"

@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { StatusBar } from 'react-native';
+import { StatusBar, Platform } from 'react-native';
 import { ThemeModeContext } from 'contexts';
 import { NavigationContainer } from '@react-navigation/native';
 import { ThemeProvider } from 'styled-components/native';
@@ -17,7 +17,7 @@ const App: React.FC = () => {
   return (
     <ThemeModeContext.Provider value={{ isDark, handleOnTheme }}>
       <ThemeProvider theme={isDark ? dark : light}>
-        {isDark ? (
+        {isDark || Platform.OS === 'android' ? (
           <StatusBar barStyle="light-content" />
         ) : (
           <StatusBar barStyle="dark-content" />
