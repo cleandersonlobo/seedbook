@@ -11,14 +11,12 @@ const BookStore: React.FC = () => {
   const [handleOnNavigate] = useHandleNavigation('Profile');
   const { profilepicture, usuario } = useContext(AlunoContext);
   function handleOpenArvore(): void {
-    Platform.select({
-      ios: Linking.openURL(
-        'https://apps.apple.com/br/app/arvore-de-livros/id1094879125',
-      ),
-      android: Linking.openURL(
-        'market://details?id=arvoredelivros.com.br.arvore',
-      ),
+    const linkStore = Platform.select({
+      ios: 'https://apps.apple.com/br/app/arvore-de-livros/id1094879125',
+
+      android: 'market://details?id=arvoredelivros.com.br.arvore',
     });
+    Linking.openURL(linkStore);
   }
   return (
     <>

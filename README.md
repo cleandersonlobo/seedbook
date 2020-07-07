@@ -21,6 +21,11 @@
   <p>
 </p>
 
+<p align="center">
+  <a href="./apk/app-seedbook.apk"> APK - Android
+  <p>
+</p>
+
 --------
 ## MegaHack 3: Team 25
 
