@@ -11,7 +11,7 @@ const BookEditor: React.FC = () => {
         <View style={{ alignItems: 'flex-end' }}>
           <NumberPage>1</NumberPage>
         </View>
-        <View style={gloablStyles.alignCenter}>
+        <View style={[gloablStyles.alignCenter]}>
           <Input
             placeholder="TÍTULO"
             maxLength={100}
@@ -43,7 +43,11 @@ const BookEditor: React.FC = () => {
         >
           <Input
             placeholder="Crie sua história"
-            style={{ fontSize: 14, width: '100%', textAlign: 'center' }}
+            style={{
+              fontSize: 14,
+              width: '100%',
+              textAlign: 'center',
+            }}
             multiline
           />
         </View>
@@ -53,4 +57,4 @@ const BookEditor: React.FC = () => {
   );
 };
 
-export default BookEditor;
+export default React.memo(BookEditor);

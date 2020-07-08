@@ -1,7 +1,6 @@
 import React from 'react';
 import { ScrollView, View } from 'react-native';
 import { SafeAreaContainer } from 'styles';
-
 import { BottomTabNavigation } from 'components';
 import { Placeholder, PlaceholderLine, Fade } from 'rn-placeholder';
 import dimensions from 'styles/dimensions';
@@ -32,7 +31,11 @@ const WriteBook: React.FC = () => {
   return (
     <>
       <SafeAreaContainer>
-        <ScrollView style={{ flexGrow: 1 }} contentContainerStyle={{ flex: 1 }}>
+        <ScrollView
+          style={{ flexGrow: 1 }}
+          contentContainerStyle={{ flex: 1 }}
+          contentInsetAdjustmentBehavior="never"
+        >
           <BookEditor />
         </ScrollView>
         <React.Suspense fallback={<CanvasLoading />}>

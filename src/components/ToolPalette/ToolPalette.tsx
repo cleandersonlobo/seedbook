@@ -27,61 +27,59 @@ const ToolPalette: React.FC = () => {
       }}
     >
       <ToolCard>
-        <ScrollView>
-          <View style={{ height: 58 }} />
-          <PaletteCard>
-            <View
-              style={{
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                width: '100%',
-                paddingVertical: 10,
-              }}
-            >
-              <ButtonStroke
-                size={20}
-                stroke={3}
-                borderColor="#000000"
-                color="#ffffff"
-              />
-              <ButtonStroke
-                size={20}
-                stroke={5}
-                borderColor="#000000"
-                color="#ffffff"
-              />
-              <ButtonStroke
-                size={20}
-                stroke={7}
-                borderColor="#000000"
-                color="#ffffff"
-              />
-            </View>
+        <View style={{ height: 58 }} />
+        <PaletteCard>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              width: '100%',
+              paddingVertical: 10,
+            }}
+          >
+            <ButtonStroke
+              size={20}
+              stroke={3}
+              borderColor="#000000"
+              color="#ffffff"
+            />
+            <ButtonStroke
+              size={20}
+              stroke={5}
+              borderColor="#000000"
+              color="#ffffff"
+            />
+            <ButtonStroke
+              size={20}
+              stroke={7}
+              borderColor="#000000"
+              color="#ffffff"
+            />
+          </View>
 
-            <ButtonOpacity onPress={handleOnClearAll}>
-              <IconEraser />
-            </ButtonOpacity>
-            <View>
-              <RowColors>
-                <CircleButton size={25} color="#2d3436" />
-                <CircleButton size={25} color="#bdc3c7" />
-              </RowColors>
-              <RowColors>
-                <CircleButton size={25} color={colors.purple.main} />
-                <CircleButton size={25} color={colors.blue.main} />
-              </RowColors>
-              <RowColors>
-                <CircleButton size={25} color={colors.yellow.main} />
-                <CircleButton size={25} color={colors.green.main} />
-              </RowColors>
-              <RowColors>
-                <CircleButton size={25} color="#e74c3c" />
-                <CircleButton size={25} color="#e67e22" />
-              </RowColors>
-            </View>
-          </PaletteCard>
-        </ScrollView>
+          <ButtonOpacity onPress={handleOnClearAll}>
+            <IconEraser />
+          </ButtonOpacity>
+          <View>
+            <RowColors>
+              <CircleButton size={25} color="#2d3436" />
+              <CircleButton size={25} color="#bdc3c7" />
+            </RowColors>
+            <RowColors>
+              <CircleButton size={25} color={colors.purple.main} />
+              <CircleButton size={25} color={colors.blue.main} />
+            </RowColors>
+            <RowColors>
+              <CircleButton size={25} color={colors.yellow.main} />
+              <CircleButton size={25} color={colors.green.main} />
+            </RowColors>
+            <RowColors>
+              <CircleButton size={25} color="#e74c3c" />
+              <CircleButton size={25} color="#e67e22" />
+            </RowColors>
+          </View>
+        </PaletteCard>
       </ToolCard>
     </Animated.View>
   );

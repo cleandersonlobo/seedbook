@@ -1,13 +1,11 @@
 import React, { useState, useCallback, useEffect, useMemo } from 'react';
-import { View, TouchableOpacity } from 'react-native';
+import { View, TouchableOpacity, Keyboard } from 'react-native';
 import Animated, { Easing } from 'react-native-reanimated';
 import { SketchCanvas } from '@terrylinla/react-native-sketch-canvas';
 import IconPaint from 'assets/svg/paint.svg';
 import { gloablStyles } from 'styles';
 import { CanvasContenxt } from 'contexts';
 
-import dimensions from 'styles/dimensions';
-import { zIndexWorkaround } from 'helpers';
 import { Icon } from './styles';
 
 let ToolPalette = React.lazy(() =>
@@ -29,14 +27,14 @@ const Canvas: React.FC = () => {
     };
   }, []);
   const canvasRef = React.createRef();
-
+  const [visible, setVisible] = useState(null);
   const translateX = useMemo(() => new Value(100), []);
   const opacity = translateX.interpolate({
     inputRange: [0, 100],
     outputRange: [1, 0.8],
     extrapolate: Animated.Extrapolate.CLAMP,
   });
-  const [visible, setVisible] = useState(null);
+
   const [state, setState] = useState<StateProps>({
     strokeWidth: 5,
     colorSelected: '#A55FEE',
@@ -45,7 +43,7 @@ const Canvas: React.FC = () => {
 
   useEffect(() => {
     const runAction = (): void => {
-      const toValue = visible ? 0 : 87;
+      const toValue = visible ? 0 : 100;
       const config = {
         duration: 300,
         toValue,
@@ -66,13 +64,13 @@ const Canvas: React.FC = () => {
   }, []);
 
   const handleOnPressPalette = useCallback(() => {
-    setVisible(val => {
-      return val === null ? true : !val;
-    });
+    Keyboard.dismiss();
+    setVisible((val): SetStateAction<null> => (val === null ? true : !val));
   }, []);
 
   const onStrokeStart = useCallback(() => {
     if (visible) handleOnPalette(false);
+    Keyboard.dismiss();
   }, [handleOnPalette, visible]);
 
   return (
@@ -94,7 +92,7 @@ const Canvas: React.FC = () => {
         <TouchableOpacity>
           <Icon name="camera" size={40} />
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={onStrokeStart}>
           <Icon name="pencil" size={40} />
         </TouchableOpacity>
       </View>
@@ -135,6 +133,7 @@ const Canvas: React.FC = () => {
             handleSetState,
             ...state,
             translateX,
+            visible,
             closePalette: handleOnPalette,
           }}
         >

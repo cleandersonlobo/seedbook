@@ -29,7 +29,7 @@ const SearchBooks: React.FC = () => {
         <ScrollView>
           <Container>
             <View style={{ marginVertical: 20 }}>
-              <Input placeholder="Pesquise aqui" />
+              <Input placeholder="Pesquise aqui" placeholderTextColor="gray" />
             </View>
             <HeaderDetailsUser disableCenter />
             <View style={{ height: 20 }} />

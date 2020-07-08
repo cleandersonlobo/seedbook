@@ -16,11 +16,13 @@ export const CanvasContenxt = React.createContext<{
   handleSetState: (object: T<any>) => void;
   closePalette?: (visivle: boolean) => void | undefined;
   translateX?: Animated.Value<number> | undefined;
+  visible: boolean | null;
 }>({
   strokeWidth: 5,
   colorSelected: '#A55FEE',
   handleSetState: () => null,
   translateX: new Animated.Value(0),
+  visible: false,
 });
 
 export const LoadingOverlayContext = React.createContext<{
