@@ -62,6 +62,14 @@
 * S3 AWS
 
 
+### Demo - Editora
+
+<p>
+  <a href="https://github.com/cleandersonlobo/seedbook/">
+    <img src="./images/image12.gif" alt="Logo" height=800>
+  </a>
+</p>
+
 
 ## Screenshots
 
@@ -108,6 +116,14 @@ Area que o aluno/usuário pode criar seus livros com um branco de palavras basea
   </a>
 </p>
 
+
+### Palheta Ferramentas para Desenhar
+
+<p>
+  <a href="https://github.com/cleandersonlobo/seedbook/">
+    <img src="./images/image12.png" alt="Logo" height=800>
+  </a>
+</p>
 
 ### Livraria
 

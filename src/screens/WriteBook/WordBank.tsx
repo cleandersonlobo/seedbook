@@ -51,7 +51,7 @@ const WordBank: React.FC = () => {
       const { data } = await axios.get(`kids/words/${kidId}`);
       setWords(data.palavras);
     };
-    // getWords();
+    getWords();
   }, []);
   return (
     <View style={{ flex: 0 }}>
