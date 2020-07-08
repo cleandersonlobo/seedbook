@@ -1,11 +1,80 @@
-import React from 'react';
+import React, { useState, useCallback, useEffect, useMemo } from 'react';
 import { View, TouchableOpacity } from 'react-native';
+import Animated, { Easing } from 'react-native-reanimated';
 import { SketchCanvas } from '@terrylinla/react-native-sketch-canvas';
 import IconPaint from 'assets/svg/paint.svg';
 import { gloablStyles } from 'styles';
+import { CanvasContenxt } from 'contexts';
+
+import dimensions from 'styles/dimensions';
+import { zIndexWorkaround } from 'helpers';
 import { Icon } from './styles';
 
+let ToolPalette = React.lazy(() =>
+  import('components/ToolPalette/ToolPalette'),
+);
+interface StateProps {
+  strokeWidth: number;
+  colorSelected: string;
+  eraser: boolean;
+}
+const { Value, timing } = Animated;
+
 const Canvas: React.FC = () => {
+  useEffect(() => {
+    return () => {
+      ToolPalette = React.lazy(() =>
+        import('components/ToolPalette/ToolPalette'),
+      );
+    };
+  }, []);
+  const canvasRef = React.createRef();
+
+  const translateX = useMemo(() => new Value(100), []);
+  const opacity = translateX.interpolate({
+    inputRange: [0, 100],
+    outputRange: [1, 0.8],
+    extrapolate: Animated.Extrapolate.CLAMP,
+  });
+  const [visible, setVisible] = useState(null);
+  const [state, setState] = useState<StateProps>({
+    strokeWidth: 5,
+    colorSelected: '#A55FEE',
+    eraser: false,
+  });
+
+  useEffect(() => {
+    const runAction = (): void => {
+      const toValue = visible ? 0 : 87;
+      const config = {
+        duration: 300,
+        toValue,
+        easing: Easing.inOut(Easing.ease),
+      };
+      const runAnimation = timing(translateX, config);
+
+      runAnimation.start();
+    };
+    if (visible !== null) runAction();
+  }, [visible]);
+  const handleSetState = useCallback(values => {
+    setState(vals => ({ ...vals, ...values }));
+  }, []);
+
+  const handleOnPalette = useCallback(value => {
+    setVisible(value);
+  }, []);
+
+  const handleOnPressPalette = useCallback(() => {
+    setVisible(val => {
+      return val === null ? true : !val;
+    });
+  }, []);
+
+  const onStrokeStart = useCallback(() => {
+    if (visible) handleOnPalette(false);
+  }, [handleOnPalette, visible]);
+
   return (
     <>
       <View
@@ -15,7 +84,7 @@ const Canvas: React.FC = () => {
             flexDirection: 'row',
             justifyContent: 'space-between',
             paddingHorizontal: 30,
-            paddingVertical: 10,
+            paddingVertical: 5,
           },
         ]}
       >
@@ -37,16 +106,47 @@ const Canvas: React.FC = () => {
           backgroundColor: 'white',
         }}
       >
-        <TouchableOpacity
-          style={{ position: 'absolute', right: 10, zIndex: 2, opacity: 0.9 }}
+        <Animated.View
+          style={[
+            {
+              position: 'absolute',
+              right: 0,
+              opacity,
+              zIndex: 2,
+              elevation: 2,
+            },
+          ]}
         >
-          <IconPaint />
-        </TouchableOpacity>
-        <SketchCanvas
-          style={{ flex: 1 }}
-          strokeColor="purple"
-          strokeWidth={7}
-        />
+          <TouchableOpacity
+            style={[
+              {
+                right: 20,
+                top: 0,
+              },
+            ]}
+            onPress={handleOnPressPalette}
+          >
+            <IconPaint />
+          </TouchableOpacity>
+        </Animated.View>
+        <CanvasContenxt.Provider
+          value={{
+            canvasRef,
+            handleSetState,
+            ...state,
+            translateX,
+            closePalette: handleOnPalette,
+          }}
+        >
+          <ToolPalette />
+          <SketchCanvas
+            ref={canvasRef}
+            onStrokeStart={onStrokeStart}
+            style={{ flex: 1 }}
+            strokeColor={state.colorSelected}
+            strokeWidth={state.strokeWidth}
+          />
+        </CanvasContenxt.Provider>
       </View>
     </>
   );

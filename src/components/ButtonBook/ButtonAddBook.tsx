@@ -5,7 +5,6 @@ import { Button } from './styles';
 
 const ButtonAddBook: React.FC<{ color?: string }> = ({ color, ...props }) => {
   const themeContext = useContext(ThemeContext);
-  themeContext.colors;
   return (
     <Button {...props}>
       <IconAdd

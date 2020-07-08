@@ -6,7 +6,7 @@ import WordBank from './WordBank';
 
 const BookEditor: React.FC = () => {
   return (
-    <Container style={{ flex: 1 }}>
+    <Container style={{ flex: 0.9 }}>
       <View>
         <View style={{ alignItems: 'flex-end' }}>
           <NumberPage>1</NumberPage>

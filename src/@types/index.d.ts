@@ -32,6 +32,8 @@ interface ColegasProps {
 interface StyledProps {
   color?: string;
   size?: number | string;
+  stroke?: number;
   customColor?: string | undefined;
   fontSize?: string | undefined;
+  borderColor?: string | undefined;
 }

@@ -12,3 +12,4 @@ export { default as HeaderDetailsUser } from './HeaderDetailsUser/HeaderDetailsU
 export { default as Loading } from './Loading/Loading';
 export { default as LoadingOverlay } from './LoadingOverlay/LoadingOverlay';
 export { default as CardAchivements } from './CardAchivements/CardAchivements';
+export { default as ToolPalette } from './ToolPalette/ToolPalette';
