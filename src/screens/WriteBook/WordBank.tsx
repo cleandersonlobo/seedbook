@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, useMemo } from 'react';
 import { View, FlatList } from 'react-native';
 
 import axios from 'config/axios';
 import { AlunoContext } from 'contexts';
 import { Placeholder, PlaceholderLine, Fade } from 'rn-placeholder';
+import AxiosMain from 'axios';
 import { WordButton, WordButtonText } from './styles';
 
 const LoadingWords: React.FC = () => {
@@ -47,11 +48,17 @@ const WordBank: React.FC = () => {
   const [words, setWords] = useState([]);
   const { id: kidId } = useContext(AlunoContext);
   useEffect(() => {
+    const ourRequest = AxiosMain.CancelToken.source();
     const getWords = async (): Promise<void> => {
-      const { data } = await axios.get(`kids/words/${kidId}`);
+      const { data } = await axios.get(`kids/words/${kidId}`, {
+        cancelToken: ourRequest.token,
+      });
       setWords(data.palavras);
     };
     getWords();
+    return () => {
+      ourRequest.cancel();
+    };
   }, []);
   return (
     <View style={{ flex: 0 }}>
@@ -75,4 +82,4 @@ const WordBank: React.FC = () => {
   );
 };
 
-export default WordBank;
+export default React.memo(WordBank);

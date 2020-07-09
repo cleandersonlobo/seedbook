@@ -4,13 +4,11 @@ import Animated, { Easing } from 'react-native-reanimated';
 import { SketchCanvas } from '@terrylinla/react-native-sketch-canvas';
 import IconPaint from 'assets/svg/paint.svg';
 import { gloablStyles } from 'styles';
+import { ToolPalette } from 'components';
 import { CanvasContenxt } from 'contexts';
 
 import { Icon } from './styles';
 
-let ToolPalette = React.lazy(() =>
-  import('components/ToolPalette/ToolPalette'),
-);
 interface StateProps {
   strokeWidth: number;
   colorSelected: string;
@@ -19,13 +17,6 @@ interface StateProps {
 const { Value, timing } = Animated;
 
 const Canvas: React.FC = () => {
-  useEffect(() => {
-    return () => {
-      ToolPalette = React.lazy(() =>
-        import('components/ToolPalette/ToolPalette'),
-      );
-    };
-  }, []);
   const canvasRef = React.createRef();
   const [visible, setVisible] = useState(null);
   const translateX = useMemo(() => new Value(100), []);

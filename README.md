@@ -12,6 +12,11 @@
   </p>
 
 <p align="center">
+  <a href="https://youtu.be/50DFb_GJMWI"> Pitch
+  <p>
+</p>
+
+<p align="center">
   <a href="https://youtu.be/lx43uIKz6qo"> Video - Demo App
   <p>
 </p>

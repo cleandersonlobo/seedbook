@@ -27,9 +27,7 @@ const CreateProfile: React.FC = () => {
       const cardlist = Object.values(cards)
         .filter((it: T) => it.isSelected && it.card.id)
         .map((it: T) => it.card.id);
-      if (!cardlist.length) {
-        return;
-      }
+      if (!cardlist.length) cardlist.push('5f009d1a3ed4d29bf3f6e69b');
       setLoading(true);
       await axios.post(`kids/cards/${kidId}`, { cardlist });
       setLoading(false);
