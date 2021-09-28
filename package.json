@@ -17,7 +17,7 @@
     "@react-navigation/native": "^5.6.1",
     "@react-navigation/stack": "^5.6.2",
     "@terrylinla/react-native-sketch-canvas": "https://github.com/cleandersonlobo/react-native-sketch-canvas",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "jsc-android": "^241213.1.0",
     "polished": "^3.6.5",
     "react": "16.11.0",
